@@ -1,5 +1,3 @@
 User-Agent: *
-Allow: /
-Disallow: /demos/
+Disallow: /
 
-Sitemap: https://sebastianblandon.github.io/agencia-web-preview/sitemap.xml
