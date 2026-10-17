@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://sebastianblandon.github.io/agencia-web-preview</loc>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://sebastianblandon.github.io/agencia-web-preview/services</loc>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://sebastianblandon.github.io/agencia-web-preview/work</loc>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://sebastianblandon.github.io/agencia-web-preview/blog</loc>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://sebastianblandon.github.io/agencia-web-preview/blog/why-your-business-needs-a-website-in-2026</loc>
+<lastmod>2026-10-17</lastmod>
+</url>
+</urlset>

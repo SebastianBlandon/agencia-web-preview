@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+3:I[96481,["/agencia-web-preview/_next/static/chunks/0bzty3_2xcfhi.js","/agencia-web-preview/_next/static/chunks/07o5b8zw4axhe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+2:T4ad,<p>Most customers search before they call. If the first thing they find is an outdated Facebook page, you lose them to the competitor with a clear site, visible phone number and reviews.</p>
+<h2>What a good local site actually needs</h2>
+<ul>
+<li>One clear headline that says what you do and where.</li>
+<li>Your phone number and a WhatsApp or booking button above the fold.</li>
+<li>Three to six services with plain-language descriptions.</li>
+<li>Real reviews with first names.</li>
+<li>Address, hours and a map link.</li>
+</ul>
+<h2>What it does not need</h2>
+<p>A blog you will never update, a chatbot, or animations that slow the page down. Speed and clarity convert.</p>
+<h2>FAQ</h2>
+<p><strong>How long does it take?</strong> Seven business days once we have your texts and photos.</p>
+<p><strong>Do I need to write anything?</strong> No. We draft everything from your existing presence and reviews; you approve.</p>
+<p><strong>What if I already have a site?</strong> We check it for speed, mobile usability and SEO basics and tell you honestly whether to fix or replace it.</p>
+<p>See our <a href="/services">services</a> or read the <a href="/blog">blog</a> for more practical guides.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"prose prose-slate mx-auto max-w-3xl px-4 py-16","children":[["$","h1",null,{"children":"Why your local business still needs a website in 2026"}],["$","p",null,{"className":"text-sm text-muted","children":"2026-10-17"}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qa_5cxujBU659bCMZC75s"}
+5:null

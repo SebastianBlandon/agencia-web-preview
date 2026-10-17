@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[27303,["/agencia-web-preview/_next/static/chunks/0bzty3_2xcfhi.js","/agencia-web-preview/_next/static/chunks/07o5b8zw4axhe.js"],""]
+3:I[96481,["/agencia-web-preview/_next/static/chunks/0bzty3_2xcfhi.js","/agencia-web-preview/_next/static/chunks/07o5b8zw4axhe.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto max-w-3xl px-4 py-16","children":[["$","h1",null,{"className":"text-3xl font-bold","children":"Blog"}],["$","ul",null,{"className":"mt-8 space-y-6","children":[[["$","li","why-your-business-needs-a-website-in-2026",{"children":[["$","$L2",null,{"href":"/blog/why-your-business-needs-a-website-in-2026","className":"text-xl font-semibold hover:text-primary","children":"Why your local business still needs a website in 2026"}],["$","p",null,{"className":"text-sm text-muted","children":"2026-10-17"}],["$","p",null,{"className":"mt-1 text-muted","children":"Social profiles are rented land. A fast, simple website is the one asset you control, and it is cheaper than you think."}]]}]],false]}]]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qa_5cxujBU659bCMZC75s"}
+5:null
