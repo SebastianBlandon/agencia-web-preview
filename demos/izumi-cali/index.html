@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#000000" />
+  <title>Izumi Restaurant | Fusión asiática, sushi y cócteles en Cali</title>
+  <meta name="description" content="Izumi Restaurant en Santa Mónica, Cali: fusión asiática, sushi, ramen y cócteles únicos en un ambiente elegante e íntimo. Reserva tu mesa por WhatsApp." />
+  <meta property="og:title" content="Izumi Restaurant | Fusión asiática, sushi y cócteles en Cali" />
+  <meta property="og:description" content="Fusión asiática, sushi, ramen y cócteles únicos en un ambiente elegante e íntimo. 4,8 en Google con 1.735 reseñas." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23000'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23C8372D'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: "#C8372D", brandDark: "#A82B22", gold: "#D9A441" }, fontFamily: { sans: ["Manrope", "system-ui", "sans-serif"] } } } };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Izumi Restaurant",
+    "servesCuisine": ["Fusión asiática", "Sushi"],
+    "telephone": "+573012019527",
+    "address": { "@type": "PostalAddress", "streetAddress": "Av. 9 Norte, Santa Mónica Residencial", "addressLocality": "Cali", "addressRegion": "Valle del Cauca", "addressCountry": "CO" },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Izumi+Restaurant+Cali",
+    "acceptsReservations": "True",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1735" }
+  }
+  </script>
+  <style>
+    html{scroll-behavior:smooth}
+    body{background:#000;font-family:Manrope,system-ui,sans-serif;text-wrap:pretty}
+    h1,h2,h3{text-wrap:balance}
+    em,i{font-style:normal}
+    .ease-fluid{transition-timing-function:cubic-bezier(0.32,0.72,0,1)}
+    .js .rv{opacity:0;transform:translateY(64px);filter:blur(12px);transition:opacity 900ms cubic-bezier(0.32,0.72,0,1),transform 900ms cubic-bezier(0.32,0.72,0,1),filter 900ms cubic-bezier(0.32,0.72,0,1)}
+    .js .rv.in{opacity:1;transform:none;filter:none}
+    .grad-text{background:linear-gradient(90deg,#FFFFFF,#9B9B9B);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .w{opacity:.3;transition:opacity 700ms cubic-bezier(0.32,0.72,0,1)}
+    .w.on{opacity:1}
+    .menu-link{opacity:0;transform:translateY(48px);transition:opacity 700ms cubic-bezier(0.32,0.72,0,1),transform 700ms cubic-bezier(0.32,0.72,0,1)}
+    #menu.open .menu-link{opacity:1;transform:none}
+    :focus-visible{outline:2px solid #D9A441;outline-offset:2px}
+    @media (prefers-reduced-motion:reduce){.js .rv{transition:none}.w{transition:none}}
+  </style>
+</head>
+<body class="bg-black text-white antialiased">
+  <script>document.documentElement.classList.add("js")</script>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-white focus:p-3 focus:text-black">Saltar al contenido</a>
+
+  <!-- Navegación isla -->
+  <header class="fixed inset-x-0 top-0 z-50 flex justify-center px-4">
+    <nav aria-label="Principal" class="mt-6 flex w-max items-center gap-3 rounded-full border border-white/10 bg-black/60 py-2 pl-6 pr-2 backdrop-blur-xl">
+      <a href="#inicio" class="text-base font-bold tracking-widest">IZUMI</a>
+      <a href="https://wa.me/573012019527?text=Hola%20Izumi%2C%20quiero%20reservar%20una%20mesa." class="rounded-full bg-brand px-3 py-2 text-sm font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-[0.98]">Reservar mesa</a>
+      <button id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" class="relative h-10 w-10 rounded-full bg-white/10 transition-all duration-700 ease-fluid hover:bg-white/20 active:scale-[0.98]">
+        <span class="b1 absolute left-3 top-4 block h-0.5 w-4 bg-white transition-all duration-700 ease-fluid" style="left:12px"></span>
+        <span class="b2 absolute left-3 top-5 block h-0.5 w-4 bg-white transition-all duration-700 ease-fluid" style="left:12px;margin-top:4px"></span>
+      </button>
+    </nav>
+  </header>
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-40 flex flex-col items-center justify-center gap-6 bg-black/80 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-fluid">
+    <a href="#platos" class="menu-link delay-100 text-4xl font-semibold">Platos</a>
+    <a href="#cocteles" class="menu-link delay-150 text-4xl font-semibold">Coctelería</a>
+    <a href="#resenas" class="menu-link delay-200 text-4xl font-semibold">Reseñas</a>
+    <a href="#reservar" class="menu-link delay-300 text-4xl font-semibold">Reservar</a>
+    <a href="#ubicacion" class="menu-link delay-500 text-4xl font-semibold">Cómo llegar</a>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="relative flex min-h-[100svh] items-end overflow-hidden bg-[#000000]">
+      <img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=1800&q=80" alt="Nigiri de salmón, atún y camarón sobre una bandeja negra con palillos y salsa de soya" class="absolute inset-0 h-full w-full object-cover opacity-70" fetchpriority="high" />
+      <div class="absolute inset-0 bg-black/50"></div>
+      <div class="relative mx-auto w-full max-w-6xl px-4 pb-16 pt-24 md:pb-24">
+        <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">Santa Mónica, Cali</p>
+        <h1 class="rv mt-4 max-w-[680px] text-5xl font-bold tracking-tight md:text-7xl"><span class="grad-text">Fusión asiática, cócteles únicos<br class="hidden md:block" /> y una mesa para quedarse.</span></h1>
+        <p class="rv mt-6 max-w-[680px] text-lg text-white/80">Sushi, ramen y cocina de autor en un ambiente elegante e íntimo, con música buena y un servicio atento.</p>
+        <div class="rv mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <a href="https://wa.me/573012019527?text=Hola%20Izumi%2C%20quiero%20reservar%20una%20mesa.%20Somos%20___%20personas%20para%20el%20___%20a%20las%20___." class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-[0.98]"><i class="ph ph-whatsapp-logo text-xl"></i>Reservar mesa</a>
+          <a href="tel:+573012019527" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-[0.98]"><i class="ph ph-phone text-xl"></i>Llamar al 301 201 9527</a>
+        </div>
+        <p class="rv mt-8 flex items-center gap-2 text-sm text-white/80"><i class="ph-fill ph-star text-gold"></i><span><strong class="font-semibold text-white">4,8</strong> en Google con 1.735 reseñas</span></p>
+      </div>
+    </section>
+
+    <!-- Prueba -->
+    <section class="bg-[#131209]">
+      <dl class="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-12 md:grid-cols-4">
+        <div class="rv"><dt class="text-sm text-white/60">Calificación en Google</dt><dd class="mt-1 text-4xl font-bold">4,8</dd></div>
+        <div class="rv"><dt class="text-sm text-white/60">Reseñas de comensales</dt><dd class="mt-1 text-4xl font-bold">1.735</dd></div>
+        <div class="rv"><dt class="text-sm text-white/60">Reseñas que mencionan los sabores</dt><dd class="mt-1 text-4xl font-bold">71</dd></div>
+        <div class="rv"><dt class="text-sm text-white/60">Reseñas que mencionan los cócteles</dt><dd class="mt-1 text-4xl font-bold">42</dd></div>
+      </dl>
+    </section>
+
+    <!-- Tagline -->
+    <section class="bg-[#000000]">
+      <div class="mx-auto max-w-6xl px-4 py-24 md:py-24">
+        <p id="tag" class="max-w-[680px] text-4xl font-bold leading-tight tracking-tight md:text-6xl" style="line-height:1.1">Sabores balanceados, cócteles que no se parecen a ningún otro y una noche íntima. Así se vive una mesa en Izumi.</p>
+      </div>
+    </section>
+
+    <!-- Platos -->
+    <section id="platos" class="bg-[#131209]">
+      <div class="mx-auto max-w-6xl px-4 py-20 md:py-24">
+        <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">Platos que piden los comensales</p>
+        <h2 class="rv mt-3 max-w-[680px] text-4xl font-bold tracking-tight md:text-5xl">La carta, con los favoritos al frente</h2>
+        <p class="rv mt-4 max-w-[680px] text-lg text-white/70">Cocina de fusión entre lo asiático y lo internacional, con sabores balanceados y combinaciones muy agradables, según quienes la han probado.</p>
+
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <article class="rv group rounded-3xl border border-white/10 bg-[#181818] p-2">
+            <div class="overflow-hidden rounded-2xl"><img loading="lazy" src="https://images.unsplash.com/photo-1535007813616-79dc02ba4021?auto=format&fit=crop&w=900&q=80" alt="Bowl de ramen con carne, huevo cocido, hongos enoki y verduras sobre una mesa oscura" class="aspect-[4/3] w-full object-cover transition-all duration-700 ease-fluid group-hover:scale-105" /></div>
+            <div class="p-4"><h3 class="text-2xl font-semibold">Ramen con cerdo y huevo</h3><p class="mt-2 text-base text-white/70">Uno de los dos platos más populares de la carta en Google Maps.</p></div>
+          </article>
+          <article class="rv group rounded-3xl border border-white/10 bg-[#181818] p-2">
+            <div class="overflow-hidden rounded-2xl"><img loading="lazy" src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80" alt="Rollos de sushi con salmón y aguacate servidos sobre una tabla de madera" class="aspect-[4/3] w-full object-cover transition-all duration-700 ease-fluid group-hover:scale-105" /></div>
+            <div class="p-4"><h3 class="text-2xl font-semibold">Sushi</h3><p class="mt-2 text-base text-white/70">Los comensales lo destacan junto al ramen como parte de la cocina de la casa.</p></div>
+          </article>
+          <article class="rv group rounded-3xl border border-white/10 bg-[#181818] p-2">
+            <div class="overflow-hidden rounded-2xl"><img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="Postre de chocolate cubierto de crema y salsa de chocolate" class="aspect-[4/3] w-full object-cover transition-all duration-700 ease-fluid group-hover:scale-105" /></div>
+            <div class="p-4"><h3 class="text-2xl font-semibold">Volcán de chocolate</h3><p class="mt-2 text-base text-white/70">“Pedimos el volcán de chocolate y estaba perfecto”, cuenta Mariana.</p></div>
+          </article>
+        </div>
+
+        <div class="mt-6 grid gap-6 md:grid-cols-3">
+          <article class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-fish text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Pulpo</h3><p class="mt-2 text-base text-white/70">El otro plato popular de la carta en Google Maps.</p></article>
+          <article class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-bowl-food text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Yakimeshi Izumi</h3><p class="mt-2 text-base text-white/70">“Muy bueno, y el sabor ahumado de las carnes combina…”, escribe Alejandro.</p></article>
+          <article class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-sparkle text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Esfera de mar</h3><p class="mt-2 text-base text-white/70">La recomienda Christian después de su visita.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coctelería -->
+    <section id="cocteles" class="bg-[#000000]">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-20 md:grid-cols-2 md:py-24">
+        <div>
+          <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">Coctelería</p>
+          <h2 class="rv mt-3 text-4xl font-bold tracking-tight md:text-5xl">Cócteles únicos, para pedir otra ronda</h2>
+          <p class="rv mt-4 text-lg text-white/70">Son el segundo tema más mencionado en las reseñas de Izumi: 42 comensales hablan de ellos. Los acompañan con el sushi y el ramen, o se piden solos para empezar la noche.</p>
+          <div class="rv mt-8"><a href="https://wa.me/573012019527?text=Hola%20Izumi%2C%20quiero%20reservar%20una%20mesa%20para%20probar%20los%20c%C3%B3cteles." class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-[0.98]"><i class="ph ph-martini text-xl"></i>Reservar mesa</a></div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Cóctel ámbar con rodaja de fruta deshidratada y romero sobre una mesa de madera, fondo oscuro" class="rv col-span-2 aspect-[16/10] w-full rounded-2xl object-cover" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=700&q=80" alt="Bartender sirviendo un cóctel con hielo y twist de naranja en un vaso corto" class="rv aspect-square w-full rounded-2xl object-cover" />
+          <img loading="lazy" src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=700&q=80" alt="Tres cócteles de colores con hierbabuena y limón sobre la barra de un bar" class="rv aspect-square w-full rounded-2xl object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Ambiente -->
+    <section class="bg-[#131209]">
+      <div class="mx-auto max-w-6xl px-4 py-20 md:py-24">
+        <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">La experiencia</p>
+        <h2 class="rv mt-3 max-w-[680px] text-4xl font-bold tracking-tight md:text-5xl">Un ambiente hermoso, elegante e íntimo</h2>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-cake text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Cumpleaños con postre</h3><p class="mt-2 text-base text-white/70">Celebramos tu cumpleaños con un postre de la casa. Avísanos al reservar.</p></div>
+          <div class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-music-notes text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Música y decoración</h3><p class="mt-2 text-base text-white/70">Excelente música, ambiente y decoración, como lo cuentan quienes ya nos visitaron.</p></div>
+          <div class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><i class="ph ph-hand-heart text-3xl text-gold"></i><h3 class="mt-4 text-2xl font-semibold">Atención cercana</h3><p class="mt-2 text-base text-white/70">Un servicio atento y amable, con detalles como una entrada de cortesía al llegar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenas" class="bg-[#000000]">
+      <div class="mx-auto max-w-6xl px-4 py-20 md:py-24">
+        <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">Reseñas reales de Google</p>
+        <h2 class="rv mt-3 max-w-[680px] text-4xl font-bold tracking-tight md:text-5xl">Lo dicen quienes ya se sentaron a la mesa</h2>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <figure class="rv flex flex-col justify-between rounded-3xl border border-white/10 bg-[#181818] p-6">
+            <blockquote class="text-base text-white/90">“Me encantó. Excelente música, ambiente y servicio. Nos recibieron con una entrada de cortesía, la comida estuvo deliciosa y todo llegó rapidísimo. Nos regalaron un postre de cumpleaños; pedimos el volcán de chocolate y estaba perfecto.”</blockquote>
+            <figcaption class="mt-6 text-sm font-semibold">Mariana <span class="font-normal text-white/60">· Local Guide en Google</span></figcaption>
+          </figure>
+          <figure class="rv flex flex-col justify-between rounded-3xl border border-white/10 bg-[#181818] p-6">
+            <blockquote class="text-base text-white/90">“La comida es rica, los platos son una buena fusión de cocina asiática y cocina internacional, los sabores son balanceados y crean unas combinaciones muy agradables, el Yakimeshi Izumi es muy bueno.”</blockquote>
+            <figcaption class="mt-6 text-sm font-semibold">Alejandro <span class="font-normal text-white/60">· Local Guide en Google</span></figcaption>
+          </figure>
+          <figure class="rv flex flex-col justify-between rounded-3xl border border-white/10 bg-[#181818] p-6">
+            <blockquote class="text-base text-white/90">“Es muy recomendable de principio a fin, el ambiente y la decoración, la atención es muy buena, en especial nos atendió Andrea, quien fue muy amable y nos ofreció un servicio excelente, la comida es deliciosa, recomiendo la esfera de mar.”</blockquote>
+            <figcaption class="mt-6 text-sm font-semibold">Christian <span class="font-normal text-white/60">· Local Guide en Google</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservar -->
+    <section id="reservar" class="bg-[#131209]">
+      <div class="mx-auto max-w-6xl px-4 py-20 md:py-24">
+        <p class="rv text-sm font-semibold uppercase tracking-widest text-gold">Reservar es fácil</p>
+        <h2 class="rv mt-3 max-w-[680px] text-4xl font-bold tracking-tight md:text-5xl">Tu mesa en tres pasos</h2>
+        <ol class="mt-12 grid gap-6 md:grid-cols-3">
+          <li class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><span class="text-4xl font-bold text-gold">1</span><h3 class="mt-4 text-2xl font-semibold">Escríbenos</h3><p class="mt-2 text-base text-white/70">Toca “Reservar mesa” y se abre WhatsApp con el mensaje listo.</p></li>
+          <li class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><span class="text-4xl font-bold text-gold">2</span><h3 class="mt-4 text-2xl font-semibold">Dinos cuántos son</h3><p class="mt-2 text-base text-white/70">Completa el número de personas, el día y la hora. Si es un cumpleaños, cuéntanos.</p></li>
+          <li class="rv rounded-3xl border border-white/10 bg-[#181818] p-6"><span class="text-4xl font-bold text-gold">3</span><h3 class="mt-4 text-2xl font-semibold">Llega y disfruta</h3><p class="mt-2 text-base text-white/70">Tu mesa queda lista para que te dediques a la carta y a los cócteles.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-[#000000]">
+      <div class="mx-auto max-w-3xl px-4 py-20 md:py-24">
+        <h2 class="rv text-4xl font-bold tracking-tight md:text-5xl">Preguntas frecuentes</h2>
+        <div class="mt-12 flex flex-col gap-3">
+          <details class="rv group rounded-2xl border border-white/10 bg-[#181818] p-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">¿Cómo reservo una mesa?<i class="ph ph-plus transition-all duration-700 ease-fluid group-open:rotate-45"></i></summary><p class="mt-3 text-base text-white/70">Por WhatsApp al 301 201 9527 o llamando al mismo número. El botón “Reservar mesa” te abre la conversación con el mensaje prellenado.</p></details>
+          <details class="rv group rounded-2xl border border-white/10 bg-[#181818] p-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">¿Qué plato pido si es mi primera vez?<i class="ph ph-plus transition-all duration-700 ease-fluid group-open:rotate-45"></i></summary><p class="mt-3 text-base text-white/70">Los más populares en Google Maps son el pulpo y el ramen con cerdo y huevo. Los comensales también recomiendan el Yakimeshi Izumi, la esfera de mar y el volcán de chocolate de postre.</p></details>
+          <details class="rv group rounded-2xl border border-white/10 bg-[#181818] p-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">¿Celebran cumpleaños?<i class="ph ph-plus transition-all duration-700 ease-fluid group-open:rotate-45"></i></summary><p class="mt-3 text-base text-white/70">Sí. Hay comensales que recibieron un postre de cumpleaños. Avísanos al reservar para prepararlo.</p></details>
+          <details class="rv group rounded-2xl border border-white/10 bg-[#181818] p-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">¿Puedo pedir para llevar o en línea?<i class="ph ph-plus transition-all duration-700 ease-fluid group-open:rotate-45"></i></summary><p class="mt-3 text-base text-white/70">Izumi aparece en Google Maps con consumo en el lugar, para llevar y pedido en línea. Escríbenos por WhatsApp y te contamos cómo.</p></details>
+          <details class="rv group rounded-2xl border border-white/10 bg-[#181818] p-4"><summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-lg font-semibold">¿Dónde queda Izumi?<i class="ph ph-plus transition-all duration-700 ease-fluid group-open:rotate-45"></i></summary><p class="mt-3 text-base text-white/70">En la Av. 9 Norte, Santa Mónica Residencial, Cali. Abajo tienes el enlace directo a Google Maps.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cierre -->
+    <section id="ubicacion" class="bg-[#1F1F1F]">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 py-20 md:grid-cols-2 md:py-24">
+        <div>
+          <h2 class="rv text-4xl font-bold tracking-tight md:text-5xl">Esta noche, en Izumi</h2>
+          <p class="rv mt-4 max-w-[680px] text-lg text-white/70">Reserva tu mesa y llega a probar el ramen, el sushi y la coctelería que tanto comentan.</p>
+          <ul class="rv mt-8 flex flex-col gap-3 text-base text-white/90">
+            <li class="flex items-start gap-3"><i class="ph ph-map-pin mt-1 text-xl text-gold"></i><a href="https://www.google.com/maps/search/?api=1&query=Izumi+Restaurant+Cali" class="underline underline-offset-4">Av. 9 Norte, Santa Mónica Residencial, Cali, Valle del Cauca</a></li>
+            <li class="flex items-start gap-3"><i class="ph ph-phone mt-1 text-xl text-gold"></i><a href="tel:+573012019527" class="underline underline-offset-4">301 201 9527</a></li>
+            <li class="flex items-start gap-3"><i class="ph ph-clock mt-1 text-xl text-gold"></i><span>Abre desde las 12 p. m., según Google Maps</span></li>
+          </ul>
+        </div>
+        <div class="rv flex flex-col justify-center gap-3">
+          <a href="https://wa.me/573012019527?text=Hola%20Izumi%2C%20quiero%20reservar%20una%20mesa.%20Somos%20___%20personas%20para%20el%20___%20a%20las%20___." class="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl bg-brand px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-[0.98]"><i class="ph ph-whatsapp-logo text-xl"></i>Reservar mesa</a>
+          <a href="tel:+573012019527" class="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-[0.98]"><i class="ph ph-phone text-xl"></i>Llamar ahora</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Izumi+Restaurant+Cali" class="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-[0.98]"><i class="ph ph-map-trifold text-xl"></i>Cómo llegar en Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#000000] px-4 py-8 text-center text-sm text-white/60">
+    <p>© <span id="y"></span> Izumi Restaurant · Av. 9 Norte, Santa Mónica, Cali</p>
+    <p class="mt-2 text-white/50">Preview concept: diseño de demostración creado por AGENCIA, aún no es el sitio oficial. Fotos de Unsplash de referencia.</p>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    // Reveal al entrar en pantalla
+    var io = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:0.1,rootMargin:"0px 0px -5% 0px"});
+    document.querySelectorAll(".rv").forEach(function(el){io.observe(el)});
+    // Tagline palabra por palabra
+    var tag = document.getElementById("tag");
+    tag.innerHTML = tag.textContent.trim().split(/\s+/).map(function(w){return '<span class="w">'+w+'</span>'}).join(" ");
+    var wio = new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting||e.boundingClientRect.top<0){e.target.classList.add("on")}})},{rootMargin:"0px 0px -35% 0px",threshold:0});
+    tag.querySelectorAll(".w").forEach(function(el,i){el.style.transitionDelay=(reduce?0:Math.min(i%6,5)*40)+"ms";wio.observe(el)});
+    // Menú
+    var b=document.getElementById("burger"),m=document.getElementById("menu"),b1=b.querySelector(".b1"),b2=b.querySelector(".b2");
+    function setMenu(o){
+      m.classList.toggle("open",o);m.classList.toggle("opacity-0",!o);m.classList.toggle("pointer-events-none",!o);
+      m.setAttribute("aria-hidden",String(!o));b.setAttribute("aria-expanded",String(o));
+      b.setAttribute("aria-label",o?"Cerrar menú":"Abrir menú");
+      b1.style.transform=o?"translateY(4px) rotate(45deg)":"";b2.style.transform=o?"translateY(-4px) rotate(-45deg)":"";
+      document.body.style.overflow=o?"hidden":"";
+    }
+    b.addEventListener("click",function(){setMenu(!m.classList.contains("open"))});
+    m.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){setMenu(false)})});
+    document.addEventListener("keydown",function(e){if(e.key==="Escape")setMenu(false)});
+  </script>
+</body>
+</html>

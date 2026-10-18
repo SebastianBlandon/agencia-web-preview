@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Casa Ibérica | Cocina española en el Barrio Peñón, Cali</title>
+  <meta name="description" content="Paella de mariscos, pulpo a la gallega, gambas al ajillo y sangría en el Barrio Peñón de Cali. Cocina española, música en vivo y reserva por WhatsApp." />
+  <meta property="og:title" content="Casa Ibérica | Cocina española en el Barrio Peñón, Cali" />
+  <meta property="og:description" content="Cocina española auténtica, porciones generosas y música en vivo. Reserva tu mesa por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1200&q=80" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23A63D24'/%3E%3Ctext x='32' y='43' font-size='32' font-family='sans-serif' font-weight='700' text-anchor='middle' fill='%23F6EFE3'%3ECI%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { crema: "#F6EFE3", arena: "#EADFCB", teja: "#A63D24", tejaDark: "#82301C", mar: "#1E3A4C", ocre: "#D9A441", noche: "#131209" },
+      fontFamily: { sans: ["Manrope", "system-ui", "sans-serif"] }
+    } } };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Casa Ibérica",
+    "servesCuisine": "Española",
+    "telephone": "+573209144812",
+    "address": { "@type": "PostalAddress", "streetAddress": "Cl. 3a Oe. #3-07, Barrio Peñón", "addressLocality": "Cali", "addressRegion": "Valle del Cauca", "addressCountry": "CO" },
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "976" },
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Casa+Ib%C3%A9rica+Cali"
+  }
+  </script>
+  <style>
+    body{background:#F6EFE3}
+    h1,h2,h3{text-wrap:balance} p,blockquote,li{text-wrap:pretty}
+    .grad{background:linear-gradient(90deg,#000000,#666666);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .js .rv{opacity:0;transform:translateY(64px);filter:blur(12px);transition:all 900ms cubic-bezier(0.32,0.72,0,1)}
+    .js .rv.in{opacity:1;transform:none;filter:none}
+    .tw{opacity:.3;transition:opacity 700ms cubic-bezier(0.32,0.72,0,1)} .tw.on{opacity:1}
+    .ph{font-style:normal}
+    a:focus-visible,button:focus-visible{outline:2px solid #D9A441;outline-offset:2px}
+    @media (prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;filter:none;transition:none}.tw{opacity:1}}
+  </style>
+</head>
+<body class="font-sans text-noche antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3">Saltar al contenido</a>
+
+  <!-- Nav: isla de vidrio -->
+  <header class="fixed inset-x-0 top-0 z-40 px-4">
+    <nav aria-label="Principal" class="mx-auto mt-6 flex w-max items-center gap-6 rounded-full bg-white/80 py-2 pl-6 pr-2 shadow-sm backdrop-blur-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">
+      <a href="#inicio" class="text-base font-bold text-teja">Casa Ibérica</a>
+      <div class="hidden items-center gap-6 text-sm font-semibold md:flex">
+        <a href="#carta" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-teja">Platos</a>
+        <a href="#ambiente" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-teja">Ambiente</a>
+        <a href="#resenas" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-teja">Reseñas</a>
+        <a href="#reservar" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-teja">Reservar</a>
+      </div>
+      <a href="https://wa.me/573209144812?text=Hola%20Casa%20Ib%C3%A9rica%2C%20quiero%20reservar%20una%20mesa." class="hidden min-h-10 items-center rounded-full bg-teja px-4 text-sm font-semibold text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-tejaDark active:scale-95 md:inline-flex">Reservar</a>
+      <button id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" class="relative h-10 w-10 rounded-full bg-teja md:hidden">
+        <span class="absolute left-3 top-4 h-0.5 w-4 bg-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]" data-l="1"></span>
+        <span class="absolute left-3 top-6 h-0.5 w-4 bg-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]" data-l="2"></span>
+      </button>
+    </nav>
+  </header>
+  <div id="menu" class="pointer-events-none fixed inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-white/80 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden" aria-hidden="true">
+    <a href="#carta" class="m-link translate-y-12 text-4xl font-bold opacity-0 transition-all delay-100 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Platos</a>
+    <a href="#ambiente" class="m-link translate-y-12 text-4xl font-bold opacity-0 transition-all delay-150 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Ambiente</a>
+    <a href="#resenas" class="m-link translate-y-12 text-4xl font-bold opacity-0 transition-all delay-200 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Reseñas</a>
+    <a href="#reservar" class="m-link translate-y-12 text-4xl font-bold text-teja opacity-0 transition-all delay-300 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Reservar</a>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="bg-crema">
+      <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-16 pt-32 md:grid-cols-2 md:pb-24 md:pt-40">
+        <div class="rv">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teja">Cocina española · Barrio Peñón, Cali</p>
+          <h1 class="grad mt-4 max-w-[680px] text-5xl font-bold leading-none md:text-6xl">Paella, pulpo y sangría<br />en pleno Barrio Peñón.</h1>
+          <p class="mt-6 max-w-[680px] text-lg text-noche/80">Casa Ibérica es un rincón pequeño y acogedor donde se cocina español de verdad, con porciones generosas y, muchas noches, música en vivo. Como el lugar es pequeño, reserva tu mesa con un mensaje.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="https://wa.me/573209144812?text=Hola%20Casa%20Ib%C3%A9rica%2C%20quiero%20reservar%20una%20mesa%20para%20___%20personas%20el%20___%20a%20las%20___." class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-teja px-3 py-2 text-base font-semibold text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-tejaDark active:scale-95"><i class="ph ph-whatsapp-logo text-xl"></i>Reservar por WhatsApp</a>
+            <a href="tel:+573209144812" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-noche/20 px-3 py-2 text-base font-semibold transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-noche/5 active:scale-95"><i class="ph ph-phone text-xl"></i>Llamar al 320 914 4812</a>
+          </div>
+          <p class="mt-6 flex items-center gap-2 text-sm font-semibold"><i class="ph-fill ph-star text-lg text-ocre"></i>4,8 en Google · 976 reseñas · Abrimos desde las 12 m.</p>
+        </div>
+        <div class="rv relative">
+          <img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?auto=format&fit=crop&w=1000&q=80" alt="Paella de mariscos con langostinos, mejillones y limón en paellera negra, junto a una copa de vino" class="aspect-[4/5] w-full rounded-3xl object-cover md:aspect-[5/6]" fetchpriority="high" />
+          <div class="absolute -bottom-6 left-4 rounded-2xl bg-mar p-4 text-white shadow-lg md:-left-6">
+            <p class="text-3xl font-bold">4,8</p>
+            <p class="text-sm">976 reseñas en Google</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Franja de servicios -->
+    <section class="bg-mar text-white">
+      <ul class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-6 text-base font-semibold md:flex-row md:justify-between">
+        <li class="flex items-center gap-2"><i class="ph ph-fork-knife text-xl text-ocre"></i>Consumo en el lugar</li>
+        <li class="flex items-center gap-2"><i class="ph ph-bag text-xl text-ocre"></i>Para llevar</li>
+        <li class="flex items-center gap-2"><i class="ph ph-moped text-xl text-ocre"></i>Entrega sin contacto</li>
+        <li class="flex items-center gap-2"><i class="ph ph-music-notes text-xl text-ocre"></i>Música en vivo</li>
+      </ul>
+    </section>
+
+    <!-- Platos -->
+    <section id="carta" class="mx-auto max-w-6xl px-4 py-24">
+      <div class="rv max-w-[680px]">
+        <p class="text-sm font-semibold uppercase tracking-widest text-teja">Lo que más piden</p>
+        <h2 class="mt-3 text-4xl font-bold">Platos para compartir, a la mesa y sin afán.</h2>
+        <p class="mt-4 text-lg text-noche/80">La carta es española de principio a fin. Estos son los platos que los comensales más recuerdan en sus reseñas y en las fotos del lugar.</p>
+      </div>
+      <div class="mt-12 grid gap-6 md:grid-cols-6">
+        <article class="rv group relative overflow-hidden rounded-3xl md:col-span-4">
+          <img src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=1200&q=80" alt="Paella de mariscos recién servida con mejillones, camarones y limón" class="h-80 w-full object-cover transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105 md:h-96" loading="lazy" />
+          <div class="absolute inset-x-0 bottom-0 bg-noche/80 p-6 text-white"><h3 class="text-2xl font-bold">Paella de mariscos</h3><p class="mt-1 text-base text-white/80">El plato más popular de la casa: arroz con mariscos para compartir.</p></div>
+        </article>
+        <article class="rv group relative overflow-hidden rounded-3xl md:col-span-2">
+          <img src="https://images.unsplash.com/photo-1572438631563-a3429408a845?auto=format&fit=crop&w=800&q=80" alt="Pulpo a la gallega asado sobre plato blanco con romero y limón" class="h-80 w-full object-cover transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105 md:h-96" loading="lazy" />
+          <div class="absolute inset-x-0 bottom-0 bg-noche/80 p-6 text-white"><h3 class="text-2xl font-bold">Pulpo a la gallega</h3><p class="mt-1 text-base text-white/80">Uno de los favoritos de la casa.</p></div>
+        </article>
+        <article class="rv group relative overflow-hidden rounded-3xl md:col-span-3">
+          <img src="https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=1000&q=80" alt="Gambas al ajillo en cazuela de barro con perejil y limón" class="h-72 w-full object-cover transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-x-0 bottom-0 bg-noche/80 p-6 text-white"><h3 class="text-2xl font-bold">Gambas al ajillo</h3><p class="mt-1 text-base text-white/80">Calientes, con ajo y para mojar pan.</p></div>
+        </article>
+        <article class="rv group relative overflow-hidden rounded-3xl md:col-span-3">
+          <img src="https://images.unsplash.com/photo-1702925614886-50ad13c88d3f?auto=format&fit=crop&w=1000&q=80" alt="Porción de cheesecake con arándanos sobre plato blanco" class="h-72 w-full object-cover transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-hover:scale-105" loading="lazy" />
+          <div class="absolute inset-x-0 bottom-0 bg-noche/80 p-6 text-white"><h3 class="text-2xl font-bold">Cheesecake</h3><p class="mt-1 text-base text-white/80">Para cerrar la mesa: lo mencionan 9 reseñas.</p></div>
+        </article>
+        <article class="rv rounded-3xl bg-teja p-8 text-white md:col-span-3">
+          <i class="ph ph-wine text-4xl text-ocre"></i>
+          <h3 class="mt-4 text-3xl font-bold">Sangría</h3>
+          <p class="mt-2 text-lg text-white/90">La más mencionada en las reseñas: 22 comensales la nombran.</p>
+        </article>
+        <article class="rv rounded-3xl bg-arena p-8 md:col-span-3">
+          <i class="ph ph-fire text-4xl text-teja"></i>
+          <h3 class="mt-4 text-3xl font-bold">Patatas bravas</h3>
+          <p class="mt-2 text-lg text-noche/80">17 reseñas las recomiendan. Pídelas para arrancar la mesa.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tagline reveal -->
+    <section class="bg-noche">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[680px] text-4xl font-bold leading-tight text-white md:text-5xl" style="line-height:1.15">Aquí se come despacio, se comparte la mesa y se brinda con sangría mientras suena la música en vivo.</p>
+      </div>
+    </section>
+
+    <!-- Ambiente -->
+    <section id="ambiente" class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-24 md:grid-cols-2">
+      <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="Mesa de restaurante con copas de vino, pan y un plato servido a la luz cálida de la noche" class="rv aspect-[4/5] w-full rounded-3xl object-cover" loading="lazy" />
+      <div class="rv">
+        <p class="text-sm font-semibold uppercase tracking-widest text-teja">El lugar</p>
+        <h2 class="mt-3 text-4xl font-bold">Pequeño a propósito, para que se sienta como en casa.</h2>
+        <p class="mt-4 text-lg text-noche/80">Los comensales hablan de un ambiente acogedor y agradable, de porciones generosas y de meseros atentos que recomiendan bien. Todo cabe en un espacio íntimo del Barrio Peñón.</p>
+        <ul class="mt-8 space-y-4 text-lg">
+          <li class="flex gap-3"><i class="ph ph-music-notes mt-1 text-2xl text-teja"></i><span><strong>Música en vivo</strong> que acompaña la comida y alarga la sobremesa.</span></li>
+          <li class="flex gap-3"><i class="ph ph-hand-heart mt-1 text-2xl text-teja"></i><span><strong>Servicio atento</strong> que te sugiere qué pedir si es tu primera vez.</span></li>
+          <li class="flex gap-3"><i class="ph ph-calendar-check mt-1 text-2xl text-teja"></i><span><strong>Mejor con reserva</strong>: el lugar es pequeño y las mesas se llenan.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenas" class="bg-arena">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <div class="rv max-w-[680px]">
+          <p class="text-sm font-semibold uppercase tracking-widest text-teja">Reseñas en Google</p>
+          <h2 class="mt-3 text-4xl font-bold">976 personas ya lo dijeron con 4,8 estrellas.</h2>
+        </div>
+        <div class="mt-12 grid gap-6 md:grid-cols-2">
+          <figure class="rv rounded-3xl bg-crema p-8">
+            <div class="flex gap-1 text-ocre"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+            <blockquote class="mt-4 text-xl">“Fui con mi pareja y nos pareció espectacular. El lugar es un poco pequeño y necesitas reserva si buscas asegurar un lugar. Sin embargo, la comida es exquisita y muy rápida, el servicio de los meseros excelente, muy amables y dispuestos.”</blockquote>
+            <figcaption class="mt-6 text-base font-semibold">Andrea <span class="font-normal text-noche/60">· Google</span></figcaption>
+          </figure>
+          <figure class="rv rounded-3xl bg-crema p-8">
+            <div class="flex gap-1 text-ocre"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+            <blockquote class="mt-4 text-xl">“Sin duda alguna el mejor restaurante de Cali en comida, calidad y servicio. Oscar como siempre muy amable y lo hace sentir a uno en casa.”</blockquote>
+            <figcaption class="mt-6 text-base font-semibold">Carlos Andrés <span class="font-normal text-noche/60">· Google</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mx-auto max-w-3xl px-4 py-24">
+      <h2 class="rv text-4xl font-bold">Antes de venir</h2>
+      <div class="mt-8 divide-y divide-noche/15 border-y border-noche/15">
+        <details class="rv group py-4"><summary class="flex min-h-12 cursor-pointer items-center justify-between text-lg font-semibold">¿Necesito reservar?<i class="ph ph-plus text-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45"></i></summary><p class="mt-2 text-base text-noche/80">Te lo recomendamos. El lugar es pequeño y, si quieres asegurar tu mesa, lo mejor es escribirnos por WhatsApp con el día, la hora y cuántos van.</p></details>
+        <details class="rv group py-4"><summary class="flex min-h-12 cursor-pointer items-center justify-between text-lg font-semibold">¿Hay música en vivo?<i class="ph ph-plus text-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45"></i></summary><p class="mt-2 text-base text-noche/80">El ambiente suele acompañarse de música en vivo. Pregúntanos por WhatsApp si quieres saber qué noche te conviene.</p></details>
+        <details class="rv group py-4"><summary class="flex min-h-12 cursor-pointer items-center justify-between text-lg font-semibold">¿Puedo pedir para llevar?<i class="ph ph-plus text-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45"></i></summary><p class="mt-2 text-base text-noche/80">Sí. Además del consumo en el lugar, tenemos servicio para llevar y entrega sin contacto.</p></details>
+        <details class="rv group py-4"><summary class="flex min-h-12 cursor-pointer items-center justify-between text-lg font-semibold">¿Desde qué hora abren?<i class="ph ph-plus text-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45"></i></summary><p class="mt-2 text-base text-noche/80">Abrimos desde las 12 m.</p></details>
+        <details class="rv group py-4"><summary class="flex min-h-12 cursor-pointer items-center justify-between text-lg font-semibold">¿Dónde queda?<i class="ph ph-plus text-xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45"></i></summary><p class="mt-2 text-base text-noche/80">En la Cl. 3a Oe. #3-07, Barrio Peñón, Cali. <a class="font-semibold text-teja underline" href="https://www.google.com/maps/search/?api=1&query=Casa+Ib%C3%A9rica+Cali">Ábrelo en Google Maps</a>.</p></details>
+      </div>
+    </section>
+
+    <!-- Reservar -->
+    <section id="reservar" class="bg-noche text-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-24 md:grid-cols-2">
+        <div class="rv">
+          <p class="text-sm font-semibold uppercase tracking-widest text-ocre">Reservas</p>
+          <h2 class="mt-3 text-4xl font-bold">Tu mesa en Casa Ibérica, a un mensaje de distancia.</h2>
+          <p class="mt-4 text-lg text-white/80">Escríbenos el día, la hora y cuántos van. El lugar es pequeño, así que mientras antes avises, mejor.</p>
+          <ul class="mt-8 space-y-3 text-base text-white/90">
+            <li class="flex gap-3"><i class="ph ph-map-pin text-xl text-ocre"></i><a class="underline" href="https://www.google.com/maps/search/?api=1&query=Casa+Ib%C3%A9rica+Cali">Cl. 3a Oe. #3-07, Barrio Peñón, Cali</a></li>
+            <li class="flex gap-3"><i class="ph ph-phone text-xl text-ocre"></i><a class="underline" href="tel:+573209144812">320 914 4812</a></li>
+            <li class="flex gap-3"><i class="ph ph-clock text-xl text-ocre"></i>Abrimos desde las 12 m.</li>
+          </ul>
+        </div>
+        <div class="rv flex flex-col justify-center gap-3">
+          <a href="https://wa.me/573209144812?text=Hola%20Casa%20Ib%C3%A9rica%2C%20quiero%20reservar%20una%20mesa%20para%20___%20personas%20el%20___%20a%20las%20___." class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-teja px-3 py-2 text-base font-semibold text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-tejaDark active:scale-95"><i class="ph ph-whatsapp-logo text-xl"></i>Reservar por WhatsApp</a>
+          <a href="tel:+573209144812" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/10 active:scale-95"><i class="ph ph-phone text-xl"></i>Llamar ahora</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Casa+Ib%C3%A9rica+Cali" class="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/10 active:scale-95"><i class="ph ph-map-trifold text-xl"></i>Cómo llegar en Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-noche pb-10 text-center text-sm text-white/60">
+    <div class="mx-auto max-w-6xl border-t border-white/15 px-4 pt-6">
+      © <span id="y"></span> Casa Ibérica · Cl. 3a Oe. #3-07, Barrio Peñón, Cali · <span class="text-white/70">Preview concept: propuesta de página, aún no publicada</span>
+    </div>
+  </footer>
+
+  <!-- Barra de reserva en móvil -->
+  <a href="https://wa.me/573209144812?text=Hola%20Casa%20Ib%C3%A9rica%2C%20quiero%20reservar%20una%20mesa." class="fixed inset-x-4 bottom-4 z-30 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-teja px-3 py-2 text-base font-semibold text-white shadow-lg transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] active:scale-95 md:hidden" id="sticky"><i class="ph ph-whatsapp-logo text-xl"></i>Reservar por WhatsApp</a>
+
+  <script>
+    document.documentElement.classList.add("js");
+    document.getElementById("y").textContent = new Date().getFullYear();
+    // Reveals
+    const io = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.05, rootMargin: "0px 0px -5% 0px" });
+    document.querySelectorAll(".rv").forEach(el => io.observe(el));
+    // Tagline palabra por palabra
+    const t = document.getElementById("tagline");
+    t.innerHTML = t.textContent.trim().split(/\s+/).map(w => `<span class="tw">${w}</span>`).join(" ");
+    const wio = new IntersectionObserver((es) => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
+    t.querySelectorAll(".tw").forEach(w => wio.observe(w));
+    document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const el=document.querySelector(a.getAttribute('href'));if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth'})}}));
+    // Menú móvil
+    const b = document.getElementById("burger"), m = document.getElementById("menu"), ls = b.querySelectorAll("span");
+    function setMenu(open) {
+      b.setAttribute("aria-expanded", open); m.setAttribute("aria-hidden", !open);
+      m.classList.toggle("opacity-0", !open); m.classList.toggle("pointer-events-none", !open);
+      m.querySelectorAll(".m-link").forEach(a => { a.classList.toggle("opacity-0", !open); a.classList.toggle("translate-y-12", !open); });
+      ls[0].style.transform = open ? "translateY(4px) rotate(45deg)" : ""; ls[1].style.transform = open ? "translateY(-4px) rotate(-45deg)" : "";
+      document.body.style.overflow = open ? "hidden" : "";
+    }
+    b.addEventListener("click", () => setMenu(b.getAttribute("aria-expanded") !== "true"));
+    m.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+  </script>
+</body>
+</html>
