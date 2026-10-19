@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Macondo Café: café de especialidad, postres y cultura en San Antonio, Cali</title>
+  <meta name="description" content="Café de especialidad, postres, cine gratis y jazz en vivo en San Antonio, Cali. Reserva por WhatsApp en Macondo Café. Google 4,6 con 4.023 reseñas." />
+  <meta property="og:title" content="Macondo Café: café de especialidad, postres y cultura en San Antonio, Cali" />
+  <meta property="og:description" content="Café de especialidad, postres, cine gratis y jazz en vivo en San Antonio, Cali. Reserva por WhatsApp." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_CO" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1200&q=70" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237A4A2B'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EM%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: "#7A4A2B", brandDark: "#5A3219", cream: "#FAF6F0", ink: "#131209" }, fontFamily: { sans: ["Manrope", "system-ui", "sans-serif"] } } } };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Macondo Café",
+    "alternateName": "Macondo: Desserts & Coffee",
+    "telephone": ["+57 2 893 1570", "+57 317 644 2611"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Cra 6 No 3-03, San Antonio", "addressLocality": "Cali", "addressRegion": "Valle del Cauca", "addressCountry": "CO" },
+    "openingHours": ["Mo-Sa 14:30-22:00", "Su 13:30-21:00"],
+    "url": "https://sebastianblandon.github.io/agencia-web-preview/demos/macondo-cafe/",
+    "hasMap": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Macondo+Cra+6+3-03+San+Antonio+Cali",
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.6", "reviewCount": "4023" }
+  }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .rv { opacity: 0; transform: translateY(64px); filter: blur(12px); transition: all 800ms cubic-bezier(0.32,0.72,0,1); }
+    .rv.in { opacity: 1; transform: translateY(0); filter: blur(0); }
+    .tw { opacity: .3; transition: opacity 700ms cubic-bezier(0.32,0.72,0,1); }
+    .tw.on { opacity: 1; }
+    .hd { background: linear-gradient(to right, #000000, #666666); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    @media (prefers-reduced-motion: reduce) { .rv, .tw { opacity: 1; transform: none; filter: none; transition: none; } html { scroll-behavior: auto; } }
+    :focus-visible { outline: 2px solid #7A4A2B; outline-offset: 2px; }
+  </style>
+  <noscript><style>.rv, .tw { opacity: 1; transform: none; filter: none; }</style></noscript>
+</head>
+<body class="bg-cream font-sans text-base text-ink antialiased" style="text-wrap: pretty">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-2 focus:top-2 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3 focus:text-sm focus:font-semibold">Saltar al contenido</a>
+
+  <!-- Navegación isla -->
+  <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4">
+    <nav aria-label="Principal" class="mt-6 flex w-max items-center gap-6 rounded-full border border-black/10 bg-white/70 py-2 pl-6 pr-2 backdrop-blur-xl">
+      <a href="#inicio" class="text-sm font-semibold">Macondo Café</a>
+      <div class="hidden items-center gap-6 text-sm font-medium text-black/70 md:flex">
+        <a href="#que-hay" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-black">Qué hay</a>
+        <a href="#resenas" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-black">Reseñas</a>
+        <a href="#preguntas" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-black">Preguntas</a>
+        <a href="#contacto" class="transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-black">Cómo llegar</a>
+      </div>
+      <a href="https://wa.me/573176442611?text=Hola%2C%20quiero%20reservar%20en%20Macondo%20Caf%C3%A9" class="hidden rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-brandDark active:scale-[0.98] sm:block">Reservar por WhatsApp</a>
+      <button id="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu" class="relative h-10 w-10 rounded-full bg-brand md:hidden">
+        <span class="b1 absolute left-3 top-4 block h-0.5 w-4 bg-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]"></span>
+        <span class="b2 absolute left-3 top-6 block h-0.5 w-4 bg-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]"></span>
+      </button>
+    </nav>
+  </header>
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-white/80 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] md:hidden">
+    <a href="#que-hay" class="m translate-y-12 text-3xl font-semibold opacity-0 transition-all delay-100 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Qué hay</a>
+    <a href="#resenas" class="m translate-y-12 text-3xl font-semibold opacity-0 transition-all delay-150 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Reseñas</a>
+    <a href="#preguntas" class="m translate-y-12 text-3xl font-semibold opacity-0 transition-all delay-200 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Preguntas</a>
+    <a href="#contacto" class="m translate-y-12 text-3xl font-semibold opacity-0 transition-all delay-300 duration-700 ease-[cubic-bezier(0.32,0.72,0,1)]">Cómo llegar</a>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-24 pt-40 md:grid-cols-2">
+      <div>
+        <p class="flex items-center gap-2 text-sm font-semibold text-brand"><i class="ph ph-map-pin" aria-hidden="true"></i> San Antonio, Cali</p>
+        <h1 class="hd mt-4 max-w-[680px] text-5xl font-bold" style="text-wrap: balance">Café de especialidad, postres y cultura en el corazón de San Antonio</h1>
+        <p class="mt-6 max-w-[680px] text-lg text-black/70">Prepara tu visita a Macondo: café por French press, Chemex o Clever, pastelería, mini cine gratuito y jazz en vivo. Abrimos todas las tardes.</p>
+        <div class="mt-8 flex flex-wrap items-center gap-4">
+          <a href="https://wa.me/573176442611?text=Hola%2C%20quiero%20reservar%20en%20Macondo%20Caf%C3%A9" class="inline-flex items-center gap-2 rounded-xl bg-brand px-3 py-2 text-base font-semibold text-white transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-brandDark active:scale-[0.98]"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Reservar por WhatsApp</a>
+          <a href="tel:+576028931570" class="text-sm font-semibold text-black/70 underline underline-offset-4 transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:text-black">o llama al (2) 893 1570</a>
+        </div>
+        <p class="mt-8 flex items-center gap-2 text-sm font-medium text-black/70"><i class="ph ph-star" aria-hidden="true"></i> Google 4,6 con 4.023 reseñas</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=70" alt="Dos capuchinos con arte latte y un café frío sostenidos en un brindis sobre una mesa de madera" class="aspect-[4/5] w-full rounded-3xl object-cover" width="1000" height="1250" />
+    </section>
+
+    <!-- Qué hay -->
+    <section id="que-hay" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <h2 class="rv max-w-[680px] text-4xl font-bold" style="text-wrap: balance">Más que una cafetería: un centro cultural del barrio</h2>
+        <p class="rv mt-4 max-w-[680px] text-lg text-black/70">Café y dulces para quedarte un rato, y planes para que ese rato valga la pena.</p>
+        <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-coffee text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Café de especialidad</h3><p class="mt-2 text-black/70">Preparado por French press, Chemex o Clever, para que elijas cómo quieres tu taza.</p></article>
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-cake text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Postres y pastelería</h3><p class="mt-2 text-black/70">Dulces y pasteles para acompañar el café, con algo de comida para quedarte más tiempo.</p></article>
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-film-slate text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Mini cine gratuito</h3><p class="mt-2 text-black/70">Una sala íntima de unos 20 asientos para ver cine sin pagar entrada.</p></article>
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-music-notes text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Jazz en vivo</h3><p class="mt-2 text-black/70">Música en vivo para acompañar la tarde y la noche en San Antonio.</p></article>
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-books text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Tertulias, libros y talleres</h3><p class="mt-2 text-black/70">Tertulias literarias, libros gratis y una agenda de talleres.</p></article>
+          <article class="rv rounded-2xl border border-black/10 bg-cream p-6"><i class="ph ph-gift text-3xl text-brand" aria-hidden="true"></i><h3 class="mt-4 text-xl font-semibold">Kit Viajero y planes para regalar</h3><p class="mt-2 text-black/70">El Kit Viajero Macondo y los planes para vivir o regalar. Pregunta por WhatsApp.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tagline reveal -->
+    <section class="mx-auto max-w-6xl px-4 py-24">
+      <p id="tagline" class="max-w-[680px] text-4xl font-bold md:text-5xl" style="text-wrap: balance">Un café bien preparado, un libro gratis y una noche de jazz. Macondo es el rincón de San Antonio donde el barrio se queda a conversar.</p>
+    </section>
+
+    <!-- Galería / qué piden -->
+    <section class="bg-white">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-24 md:grid-cols-2">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=700&q=70" alt="Café filtrado en Chemex mientras se vierte agua caliente desde una jarra de cuello de cisne" class="rv aspect-[3/4] w-full rounded-2xl object-cover" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=700&q=70" alt="Tres tazas de café con arte latte sobre una mesa de madera junto a plantas" class="rv mt-12 aspect-[3/4] w-full rounded-2xl object-cover" loading="lazy" />
+        </div>
+        <div>
+          <h2 class="rv max-w-[680px] text-4xl font-bold" style="text-wrap: balance">Lo que más mencionan los visitantes</h2>
+          <p class="rv mt-4 text-lg text-black/70">Según quienes ya pasaron por Macondo, estos son los favoritos de la mesa.</p>
+          <ul class="rv mt-8 grid gap-3 text-base font-medium sm:grid-cols-2">
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-coffee text-brand" aria-hidden="true"></i> Limonada de café</li>
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-beer-bottle text-brand" aria-hidden="true"></i> Milkshake de limón</li>
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-cookie text-brand" aria-hidden="true"></i> Brownie de chocolate</li>
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-cake text-brand" aria-hidden="true"></i> Wafflebono</li>
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-hamburger text-brand" aria-hidden="true"></i> Hamburguesa vegetariana</li>
+            <li class="flex items-center gap-3 rounded-xl border border-black/10 bg-cream p-3"><i class="ph ph-cake text-brand" aria-hidden="true"></i> Pasteles y dulces</li>
+          </ul>
+          <p class="rv mt-6 text-sm text-black/60">Para ver la carta completa y los precios, pregúntanos por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reseñas -->
+    <section id="resenas" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="rv max-w-[680px] text-4xl font-bold" style="text-wrap: balance">Lo que dicen de Macondo</h2>
+      <div class="rv mt-8 grid gap-6 sm:grid-cols-2">
+        <div class="rounded-2xl border border-black/10 bg-white p-6"><p class="text-5xl font-bold text-brand">4,6</p><p class="mt-2 text-lg font-semibold">Google</p><p class="text-black/70">4.023 reseñas</p></div>
+        <div class="rounded-2xl border border-black/10 bg-white p-6"><p class="text-5xl font-bold text-brand">4,5</p><p class="mt-2 text-lg font-semibold">Tripadvisor</p><p class="text-black/70">223 reseñas</p></div>
+      </div>
+      <div class="mt-6 grid gap-6 md:grid-cols-3">
+        <figure class="rv rounded-2xl border border-black/10 bg-white p-6"><blockquote class="text-lg text-black/80">“Great place in San Antonio, lovely food and wonderful coffee, very nice space!”</blockquote><figcaption class="mt-4 text-sm font-semibold">Título de una reseña <span class="font-normal text-black/60">en Tripadvisor</span></figcaption></figure>
+        <figure class="rv rounded-2xl border border-black/10 bg-white p-6"><blockquote class="text-lg text-black/80">“Café Colombia Cali”</blockquote><figcaption class="mt-4 text-sm font-semibold">Título de una reseña <span class="font-normal text-black/60">en Tripadvisor</span></figcaption></figure>
+        <figure class="rv rounded-2xl border border-black/10 bg-white p-6"><blockquote class="text-lg text-black/80">“Well known to its loyal clientèle not only as a place for savouring a proper coffee of origin but also as cultural centre.”</blockquote><figcaption class="mt-4 text-sm font-semibold">Guía de Cali <span class="font-normal text-black/60">en caliadventurer.com</span></figcaption></figure>
+      </div>
+    </section>
+
+    <!-- Preguntas -->
+    <section id="preguntas" class="bg-white">
+      <div class="mx-auto max-w-3xl px-4 py-24">
+        <h2 class="rv text-4xl font-bold" style="text-wrap: balance">Preguntas frecuentes</h2>
+        <div class="mt-8 grid gap-3">
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿Cuál es el horario?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">De lunes a sábado de 2:30 p. m. a 10:00 p. m. Domingos y festivos de 1:30 p. m. a 9:00 p. m.</p></details>
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿Cómo reservo?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">Escríbenos por WhatsApp al 317 644 2611 o llama al (2) 893 1570.</p></details>
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿Dónde queda Macondo Café?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">En la Cra 6 No 3-03, barrio San Antonio, Cali.</p></details>
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿El mini cine tiene costo?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">No, es gratuito. La sala tiene unos 20 asientos.</p></details>
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿Qué métodos de café preparan?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">French press, Chemex y Clever.</p></details>
+          <details class="rv group rounded-2xl border border-black/10 bg-cream p-4"><summary class="flex cursor-pointer items-center justify-between gap-4 text-lg font-semibold">¿Hay planes para regalar?<i class="ph ph-plus transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] group-open:rotate-45" aria-hidden="true"></i></summary><p class="mt-3 text-black/70">Sí, tenemos el Kit Viajero Macondo y planes para vivir o regalar. Pregunta los detalles por WhatsApp.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-ink text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 py-24 md:grid-cols-2">
+        <div>
+          <h2 class="rv max-w-[680px] text-4xl font-bold" style="text-wrap: balance">Reserva tu mesa en Macondo</h2>
+          <p class="rv mt-4 text-lg text-white/70">Escríbenos y te esperamos en San Antonio, Cali.</p>
+          <ul class="rv mt-8 grid gap-4 text-white/90">
+            <li class="flex items-start gap-3"><i class="ph ph-map-pin mt-1" aria-hidden="true"></i><a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Macondo+Cra+6+3-03+San+Antonio+Cali" class="underline underline-offset-4">Cra 6 No 3-03, San Antonio, Cali</a></li>
+            <li class="flex items-start gap-3"><i class="ph ph-phone mt-1" aria-hidden="true"></i><a href="tel:+576028931570" class="underline underline-offset-4">(2) 893 1570</a></li>
+            <li class="flex items-start gap-3"><i class="ph ph-clock mt-1" aria-hidden="true"></i><span>Lunes a sábado de 2:30 p. m. a 10:00 p. m.<br />Domingos y festivos de 1:30 p. m. a 9:00 p. m.</span></li>
+          </ul>
+        </div>
+        <div class="rv flex flex-col justify-center gap-4">
+          <a href="https://wa.me/573176442611?text=Hola%2C%20quiero%20reservar%20en%20Macondo%20Caf%C3%A9" class="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-3 py-2 text-base font-semibold text-ink transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-cream active:scale-[0.98]"><i class="ph ph-whatsapp-logo" aria-hidden="true"></i> Reservar por WhatsApp</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Macondo+Cra+6+3-03+San+Antonio+Cali" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/30 px-3 py-2 text-base font-semibold transition-all duration-700 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-white/10 active:scale-[0.98]"><i class="ph ph-map-trifold" aria-hidden="true"></i> Ver en Google Maps</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-ink pb-12 pt-4 text-center text-sm text-white/60">
+    <div class="mx-auto max-w-6xl border-t border-white/10 px-4 pt-8">
+      © <span id="y"></span> Macondo Café · Cra 6 No 3-03, San Antonio, Cali<br />
+      <span class="text-white/50">Preview concept: demo creada por AGENCIA, aún no es el sitio oficial del negocio. Fotos de Unsplash.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Reveal al entrar en pantalla
+    const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.15 });
+    document.querySelectorAll(".rv").forEach((el) => io.observe(el));
+
+    // Tagline: palabra por palabra
+    const tg = document.getElementById("tagline");
+    tg.innerHTML = tg.textContent.trim().split(/\s+/).map((w) => '<span class="tw">' + w + "</span>").join(" ");
+    const wio = new IntersectionObserver((es) => {
+      es.filter((e) => e.isIntersecting).forEach((e, i) => { setTimeout(() => e.target.classList.add("on"), i * 60); wio.unobserve(e.target); });
+    }, { rootMargin: "0px 0px -35% 0px" });
+    tg.querySelectorAll(".tw").forEach((el) => wio.observe(el));
+
+    // Menú móvil
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    const b1 = burger.querySelector(".b1"), b2 = burger.querySelector(".b2");
+    function setMenu(open) {
+      burger.setAttribute("aria-expanded", open); menu.setAttribute("aria-hidden", !open);
+      menu.classList.toggle("opacity-0", !open); menu.classList.toggle("pointer-events-none", !open);
+      menu.querySelectorAll(".m").forEach((a) => { a.classList.toggle("translate-y-12", !open); a.classList.toggle("opacity-0", !open); });
+      b1.classList.toggle("rotate-45", open); b1.classList.toggle("top-5", open); b1.classList.toggle("top-4", !open);
+      b2.classList.toggle("-rotate-45", open); b2.classList.toggle("top-5", open); b2.classList.toggle("top-6", !open);
+    }
+    burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+    menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
+  </script>
+</body>
+</html>
