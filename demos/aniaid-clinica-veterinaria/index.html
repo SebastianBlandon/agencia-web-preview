@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>AniAid Clínica Veterinária · Veterinários em Benfica, Lisboa</title>
+  <meta name="description" content="Clínica veterinária em Benfica, Lisboa, desde 2001. Prevenção, cirurgia, oncologia, ecografia e visitas ao domicílio para cães e gatos." />
+  <meta property="og:title" content="AniAid Clínica Veterinária · Veterinários em Benfica, Lisboa" />
+  <meta property="og:description" content="Clínica veterinária em Benfica, Lisboa, desde 2001. Prevenção, cirurgia, oncologia, ecografia e visitas ao domicílio." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_PT" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z' fill='white'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { brand: "#0f766e", brandDark: "#115e59", soft: "#f0fdfa" }, fontFamily: { sans: ["Manrope", "system-ui", "sans-serif"] } } } };
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "AniAid Clínica Veterinária",
+    "telephone": ["+351217622920", "+351926882116"],
+    "address": { "@type": "PostalAddress", "streetAddress": "Rua República Peruana, 5B", "addressLocality": "Lisboa", "addressRegion": "Benfica", "addressCountry": "PT" },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "14:00" }
+    ],
+    "foundingDate": "2001"
+  }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    h1, h2, h3, p, li, summary { text-wrap: pretty; }
+    h1, h2 { text-wrap: balance; }
+    .ease-fluid { transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal { opacity: 0; transform: translateY(64px); filter: blur(8px); transition: all 900ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal.in { opacity: 1; transform: none; filter: blur(0); }
+    .hero-title { background: linear-gradient(to right, #000000, #666666); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .word { opacity: 0.3; transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .word.on { opacity: 1; }
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .plus { transform: rotate(45deg); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; filter: none; transition: none; } .word { opacity: 1; } }
+  </style>
+</head>
+<body class="bg-white font-sans text-slate-900 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3">Saltar para o conteúdo</a>
+
+  <!-- Navegação em ilha flutuante -->
+  <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4">
+    <nav class="mt-6 flex w-max items-center gap-6 rounded-full border border-slate-200 bg-white/80 py-2 pl-6 pr-2 backdrop-blur-xl" aria-label="Principal">
+      <a href="#inicio" class="text-sm font-semibold">AniAid</a>
+      <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+        <a href="#servicos" class="transition-all duration-700 ease-fluid hover:text-slate-900">Serviços</a>
+        <a href="#como-funciona" class="transition-all duration-700 ease-fluid hover:text-slate-900">Como funciona</a>
+        <a href="#perguntas" class="transition-all duration-700 ease-fluid hover:text-slate-900">Perguntas</a>
+        <a href="#contacto" class="transition-all duration-700 ease-fluid hover:text-slate-900">Contacto</a>
+      </div>
+      <a href="tel:+351217622920" class="hidden rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 sm:inline-block">Ligar 217 622 920</a>
+      <button id="burger" type="button" class="relative h-10 w-10 rounded-full md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span class="bar absolute left-3 top-4 block h-0.5 w-4 bg-slate-900 transition-all duration-700 ease-fluid"></span>
+        <span class="bar absolute left-3 top-6 block h-0.5 w-4 bg-slate-900 transition-all duration-700 ease-fluid"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div id="menu" class="pointer-events-none fixed inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-white/80 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-fluid md:hidden" aria-hidden="true">
+    <a href="#servicos" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-100">Serviços</a>
+    <a href="#como-funciona" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-150">Como funciona</a>
+    <a href="#perguntas" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-200">Perguntas</a>
+    <a href="#contacto" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-300">Contacto</a>
+  </div>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="bg-soft">
+      <div class="mx-auto max-w-6xl px-4 pb-24 pt-40 md:pt-48">
+        <p class="reveal text-sm font-semibold uppercase tracking-wider text-brand">Benfica, Lisboa · Desde 2001</p>
+        <h1 class="reveal hero-title mt-4 max-w-[680px] text-5xl font-bold md:text-6xl">Cuidados veterinários completos,<br />perto de si e do seu animal.</h1>
+        <p class="reveal mt-6 max-w-[680px] text-lg text-slate-700">Clínica acreditada pela Ordem dos Médicos Veterinários. Da vacina anual à cirurgia e à oncologia, tratamos de tudo no mesmo sítio.</p>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="tel:+351217622920" class="rounded-lg bg-brand px-3 py-2 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Ligar para marcar consulta</a>
+        </div>
+        <p class="reveal mt-6 text-sm text-slate-600">Acreditada pela Ordem dos Médicos Veterinários · Segunda a sexta, das 09:00 às 19:00</p>
+      </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">Tudo o que o seu animal precisa, sem mudar de clínica</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Uma equipa que acompanha o seu animal em todas as fases da vida, desde a primeira visita até à idade sénior.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M178 40c-20 0-34 12-50 12S98 40 78 40C48 40 24 66 24 100c0 70 78 116 104 116s104-46 104-116c0-34-24-60-54-60Zm-50 160c-14-6-80-44-80-100 0-20 14-36 30-36 14 0 24 12 50 12s36-12 50-12c16 0 30 16 30 36 0 56-66 94-80 100Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Medicina preventiva</h3>
+          <p class="mt-2 text-slate-600">Vacinas, desparasitação, identificação eletrónica, revisão anual e higiene oral.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128 24a104 104 0 1 0 104 104A104 104 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88 88 0 0 1-88 88Zm8-136h-16v40H80v16h40v40h16v-40h40v-16h-40Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Cirurgia</h3>
+          <p class="mt-2 text-slate-600">Cirurgia geral, oncológica e reconstrutiva, esterilizações e limpeza dentária.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm0 160H40V56h176Zm-88-24a48 48 0 1 0-48-48 48 48 0 0 0 48 48Zm0-80a32 32 0 1 1-32 32 32 32 0 0 1 32-32Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Diagnóstico</h3>
+          <p class="mt-2 text-slate-600">Análises, radiologia, ecografia abdominal, ecocardiografia e displasia da anca e do cotovelo.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128 24a104 104 0 1 0 104 104A104 104 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88 88 0 0 1-88 88Zm40-104a40 40 0 0 1-80 0h16a24 24 0 0 0 48 0Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Oncologia e medicina interna</h3>
+          <p class="mt-2 text-slate-600">Quimioterapia, medicina felina, da dor, geriátrica e acompanhamento da obesidade.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M240 120 128 24 16 120h24v96h64v-56h48v56h64v-96Zm-40 80h-32v-56H88v56H56v-91.8l72-62.4 72 62.4Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Visitas ao domicílio</h3>
+          <p class="mt-2 text-slate-600">Quando é difícil trazer o seu animal à clínica, a consulta vai até à sua casa.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M168 32H88a16 16 0 0 0-16 16v160a16 16 0 0 0 16 16h80a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16Zm0 176H88V48h80Zm-64-120h48v16h-48Zm0 40h48v16h-48Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Consultas e nutrição</h3>
+          <p class="mt-2 text-slate-600">Primeira visita, consulta de viagem, passaporte, microchip e dietas terapêuticas.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[680px] text-4xl font-bold md:text-5xl">Mais de vinte anos a cuidar de cães e gatos em Benfica, com a calma e o rigor que o seu animal merece.</p>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">Marcar é simples</h2>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <div class="reveal rounded-2xl bg-soft p-6"><p class="text-3xl font-bold text-brand">1</p><h3 class="mt-2 text-xl font-semibold">Ligue ou envie mensagem</h3><p class="mt-2 text-slate-600">Telefone para 217 622 920 ou escreva por WhatsApp para 926 882 116.</p></div>
+        <div class="reveal rounded-2xl bg-soft p-6"><p class="text-3xl font-bold text-brand">2</p><h3 class="mt-2 text-xl font-semibold">Combinamos o melhor horário</h3><p class="mt-2 text-slate-600">Atendemos de segunda a sexta e ao sábado de manhã.</p></div>
+        <div class="reveal rounded-2xl bg-soft p-6"><p class="text-3xl font-bold text-brand">3</p><h3 class="mt-2 text-xl font-semibold">Consulta e plano de cuidados</h3><p class="mt-2 text-slate-600">Explicamos o diagnóstico e o tratamento com clareza, passo a passo.</p></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="perguntas" class="bg-slate-50">
+      <div class="mx-auto max-w-3xl px-4 py-24">
+        <h2 class="reveal text-4xl font-bold">Perguntas frequentes</h2>
+        <div class="mt-12 space-y-3">
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Onde fica a clínica?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Na Rua República Peruana, 5B, em Benfica, Lisboa, atrás do restaurante David.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Qual é o horário de atendimento?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">De segunda a sexta, das 09:00 às 19:00, e ao sábado, das 10:00 às 14:00.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Fazem consultas ao domicílio?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Sim. Ligue para combinar a visita.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Posso tratar aqui do passaporte e do microchip?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Sim. Temos consulta de viagem, passaporte e identificação eletrónica.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Têm oncologia e ecografia?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Sim. Fazemos quimioterapia, ecografia abdominal e ecocardiografia na própria clínica.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Como marco uma consulta?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Por telefone (217 622 920) ou por WhatsApp (926 882 116). A marcação não tem compromisso.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-slate-900 text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 py-24 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="max-w-[680px] text-4xl font-bold">Marque a consulta do seu animal</h2>
+          <p class="mt-4 text-slate-300">Estamos em Benfica, Lisboa. Ligue ou escreva e respondemos para combinar o melhor horário.</p>
+          <ul class="mt-8 space-y-3 text-slate-200">
+            <li>Telefone: <a href="tel:+351217622920" class="underline">217 622 920</a></li>
+            <li>Móvel e WhatsApp: <a href="https://wa.me/351926882116" class="underline">926 882 116</a></li>
+            <li>Morada: Rua República Peruana, 5B, Benfica, Lisboa</li>
+            <li>Segunda a sexta, 09:00 às 19:00 · Sábado, 10:00 às 14:00</li>
+          </ul>
+        </div>
+        <div class="reveal flex flex-col justify-center gap-3">
+          <a href="tel:+351217622920" class="rounded-lg bg-brand px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Ligar para marcar consulta</a>
+          <a href="https://wa.me/351926882116" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Escrever por WhatsApp</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=AniAid%20Cl%C3%ADnica%20Veterin%C3%A1ria&query_place_id=ChIJIX2eB9jMHg0RRtrI1BoJl4Q" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Como chegar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="y"></span> AniAid Clínica Veterinária · Rua República Peruana, 5B, Benfica, Lisboa · <span class="text-slate-500">Preview concept criado pela AGENCIA, ainda não publicado</span>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    // Menu móvel
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    const bars = burger.querySelectorAll(".bar"), links = menu.querySelectorAll(".mlink");
+    function setMenu(open) {
+      burger.setAttribute("aria-expanded", open);
+      menu.setAttribute("aria-hidden", !open);
+      menu.classList.toggle("opacity-0", !open);
+      menu.classList.toggle("pointer-events-none", !open);
+      links.forEach(l => { l.classList.toggle("translate-y-12", !open); l.classList.toggle("opacity-0", !open); });
+      bars[0].classList.toggle("rotate-45", open); bars[0].classList.toggle("top-5", open); bars[0].classList.toggle("top-4", !open);
+      bars[1].classList.toggle("-rotate-45", open); bars[1].classList.toggle("top-5", open); bars[1].classList.toggle("top-6", !open);
+    }
+    burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+    links.forEach(l => l.addEventListener("click", () => setMenu(false)));
+
+    // Aparecer ao entrar no ecrã
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.1 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+    // Frase de destaque: palavra a palavra
+    const tg = document.getElementById("tagline");
+    tg.innerHTML = tg.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
+    const wio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
+    tg.querySelectorAll(".word").forEach(w => wio.observe(w));
+  </script>
+</body>
+</html>
