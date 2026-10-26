@@ -10,10 +10,11 @@
   <meta property="og:description" content="Clínica veterinária em Benfica, Lisboa, desde 2001. Prevenção, cirurgia, oncologia, ecografia e visitas ao domicílio." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_PT" />
+  <meta property="og:image" content="img/fachada.jpg" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Cpath d='M14 8h4v6h6v4h-6v6h-4v-6H8v-4h6z' fill='white'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
     tailwind.config = { theme: { extend: { colors: { brand: "#0f766e", brandDark: "#115e59", soft: "#f0fdfa" }, fontFamily: { sans: ["Manrope", "system-ui", "sans-serif"] } } } };
@@ -57,36 +58,60 @@
       <a href="#inicio" class="text-sm font-semibold">AniAid</a>
       <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
         <a href="#servicos" class="transition-all duration-700 ease-fluid hover:text-slate-900">Serviços</a>
+        <a href="#clinica" class="transition-all duration-700 ease-fluid hover:text-slate-900">A clínica</a>
         <a href="#como-funciona" class="transition-all duration-700 ease-fluid hover:text-slate-900">Como funciona</a>
         <a href="#perguntas" class="transition-all duration-700 ease-fluid hover:text-slate-900">Perguntas</a>
         <a href="#contacto" class="transition-all duration-700 ease-fluid hover:text-slate-900">Contacto</a>
       </div>
-      <a href="tel:+351217622920" class="hidden rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 sm:inline-block">Ligar 217 622 920</a>
-      <button id="burger" type="button" class="relative h-10 w-10 rounded-full md:hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-brand" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
-        <span class="bar absolute left-3 top-4 block h-0.5 w-4 bg-slate-900 transition-all duration-700 ease-fluid"></span>
-        <span class="bar absolute left-3 top-6 block h-0.5 w-4 bg-slate-900 transition-all duration-700 ease-fluid"></span>
+      <a href="tel:+351217622920" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Ligar</a>
+      <button id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu" class="relative h-10 w-10 rounded-full border border-slate-200 md:hidden">
+        <span class="bar absolute left-2.5 right-2.5 top-4 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+        <span class="bar absolute left-2.5 right-2.5 top-6 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
       </button>
     </nav>
   </header>
 
-  <div id="menu" class="pointer-events-none fixed inset-0 z-30 flex flex-col items-center justify-center gap-6 bg-white/80 opacity-0 backdrop-blur-3xl transition-all duration-700 ease-fluid md:hidden" aria-hidden="true">
-    <a href="#servicos" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-100">Serviços</a>
-    <a href="#como-funciona" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-150">Como funciona</a>
-    <a href="#perguntas" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-200">Perguntas</a>
-    <a href="#contacto" class="mlink translate-y-12 text-3xl font-semibold opacity-0 transition-all duration-700 ease-fluid delay-300">Contacto</a>
+  <!-- Menu móvel -->
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-30 bg-white/95 opacity-0 backdrop-blur-xl transition-opacity duration-500 ease-fluid md:hidden">
+    <div class="flex h-full flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <a href="#servicos" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Serviços</a>
+      <a href="#clinica" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">A clínica</a>
+      <a href="#como-funciona" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Como funciona</a>
+      <a href="#perguntas" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Perguntas</a>
+      <a href="#contacto" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Contacto</a>
+    </div>
   </div>
 
   <main id="main">
-    <!-- Hero -->
-    <section id="inicio" class="bg-soft">
-      <div class="mx-auto max-w-6xl px-4 pb-24 pt-40 md:pt-48">
-        <p class="reveal text-sm font-semibold uppercase tracking-wider text-brand">Benfica, Lisboa · Desde 2001</p>
-        <h1 class="reveal hero-title mt-4 max-w-[680px] text-5xl font-bold md:text-6xl">Cuidados veterinários completos,<br />perto de si e do seu animal.</h1>
-        <p class="reveal mt-6 max-w-[680px] text-lg text-slate-700">Clínica acreditada pela Ordem dos Médicos Veterinários. Da vacina anual à cirurgia e à oncologia, tratamos de tudo no mesmo sítio.</p>
-        <div class="reveal mt-8 flex flex-wrap gap-3">
-          <a href="tel:+351217622920" class="rounded-lg bg-brand px-3 py-2 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Ligar para marcar consulta</a>
+    <!-- Hero com foto da fachada -->
+    <section id="inicio" class="relative overflow-hidden bg-soft">
+      <div aria-hidden="true" class="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-40 md:grid-cols-2 md:pb-28 md:pt-48">
+        <div>
+          <p class="reveal text-sm font-semibold uppercase tracking-wider text-brand">Benfica, Lisboa · Desde 2001</p>
+          <h1 class="reveal hero-title mt-4 text-5xl font-extrabold md:text-6xl">Cuidados veterinários completos, perto de si e do seu animal.</h1>
+          <p class="reveal mt-6 max-w-[560px] text-lg text-slate-700">Clínica acreditada pela Ordem dos Médicos Veterinários. Da vacina anual à cirurgia e à oncologia, tratamos de tudo no mesmo sítio.</p>
+          <div class="reveal mt-8 flex flex-wrap gap-3">
+            <a href="tel:+351217622920" class="rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Ligar para marcar consulta</a>
+            <a href="https://wa.me/351926882116" class="rounded-lg border border-brand/40 px-4 py-2.5 text-base font-semibold text-brandDark transition-all duration-700 ease-fluid hover:bg-white active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Escrever por WhatsApp</a>
+          </div>
+          <p class="reveal mt-6 text-sm text-slate-600">Segunda a sexta, das 09:00 às 19:00 · Sábado, das 10:00 às 14:00</p>
         </div>
-        <p class="reveal mt-6 text-sm text-slate-600">Acreditada pela Ordem dos Médicos Veterinários · Segunda a sexta, das 09:00 às 19:00</p>
+        <div class="reveal relative mx-auto w-full max-w-sm md:max-w-none">
+          <img src="img/fachada.jpg" alt="Fachada da AniAid Clínica Veterinária na Rua República Peruana, Benfica" width="900" height="1186" class="w-full rounded-3xl object-cover shadow-2xl ring-1 ring-slate-900/10 md:aspect-[4/5]" loading="eager" />
+          <div class="absolute -left-4 top-6 rounded-2xl bg-white/90 px-4 py-2 text-sm font-semibold text-brandDark shadow-lg backdrop-blur">Acreditada pela OMV</div>
+          <div class="absolute -bottom-4 right-6 rounded-2xl bg-brand px-4 py-2 text-sm font-semibold text-white shadow-lg">Desde 2001 em Benfica</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faixa de fotos do espaço -->
+    <section aria-label="O espaço da clínica" class="border-b border-slate-100 bg-white">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 py-10 md:grid-cols-3">
+        <img src="img/rececao.jpg" alt="Receção da clínica AniAid" width="900" height="1600" loading="lazy" class="reveal h-48 w-full rounded-2xl object-cover md:h-72" />
+        <img src="img/gabinete-exames.jpg" alt="Gabinete de exames da clínica AniAid" width="1200" height="900" loading="lazy" class="reveal h-48 w-full rounded-2xl object-cover md:h-72" />
+        <img src="img/sala-espera.jpg" alt="Sala de espera da clínica AniAid" width="900" height="1600" loading="lazy" class="reveal col-span-2 h-48 w-full rounded-2xl object-cover md:col-span-1 md:h-72" />
       </div>
     </section>
 
@@ -106,7 +131,7 @@
           <p class="mt-2 text-slate-600">Cirurgia geral, oncológica e reconstrutiva, esterilizações e limpeza dentária.</p>
         </article>
         <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
-          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm0 160H40V56h176Zm-88-24a48 48 0 1 0-48-48 48 48 0 0 0 48 48Zm0-80a32 32 0 1 1-32 32 32 32 0 0 1 32-32Z"/></svg>
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0 16-16Zm0 160H40V56h176Zm-88-24a48 48 0 1 0-48-48 48 48 0 0 0 48 48Zm0-80a32 32 0 1 1-32 32 32 32 0 0 1 32-32Z"/></svg>
           <h3 class="mt-4 text-xl font-semibold">Diagnóstico</h3>
           <p class="mt-2 text-slate-600">Análises, radiologia, ecografia abdominal, ecocardiografia e displasia da anca e do cotovelo.</p>
         </article>
@@ -128,10 +153,23 @@
       </div>
     </section>
 
-    <!-- Tagline -->
-    <section class="bg-slate-50">
+    <!-- A clínica: galeria e equipa -->
+    <section id="clinica" class="bg-slate-50">
       <div class="mx-auto max-w-6xl px-4 py-24">
-        <p id="tagline" class="max-w-[680px] text-4xl font-bold md:text-5xl">Mais de vinte anos a cuidar de cães e gatos em Benfica, com a calma e o rigor que o seu animal merece.</p>
+        <h2 class="reveal max-w-[680px] text-4xl font-bold">Um espaço pensado para eles</h2>
+        <p class="reveal mt-4 max-w-[680px] text-slate-600">Consultórios, gabinete de exames e uma equipa que trata cada animal como se fosse seu.</p>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <img src="img/consultorio.jpg" alt="Consultório da clínica AniAid" width="1200" height="900" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+          <img src="img/gabinete-consulta.jpg" alt="Gabinete de consulta da clínica AniAid" width="900" height="1200" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+          <img src="img/equipa.jpg" alt="Veterinária da equipa AniAid em farda de trabalho" width="800" height="1067" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover object-top shadow-md" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="bg-slate-900">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[680px] text-4xl font-bold text-white md:text-5xl">Mais de vinte anos a cuidar de cães e gatos em Benfica, com a calma e o rigor que o seu animal merece.</p>
       </div>
     </section>
 
@@ -201,7 +239,7 @@
   </main>
 
   <footer class="py-8 text-center text-sm text-slate-500">
-    © <span id="y"></span> AniAid Clínica Veterinária · Rua República Peruana, 5B, Benfica, Lisboa · <span class="text-slate-500">Preview concept — proposta de design, ainda não é o site oficial</span>
+    © <span id="y"></span> AniAid Clínica Veterinária · Rua República Peruana, 5B, Benfica, Lisboa · <span class="text-slate-500">Preview concept — proposta de design, ainda não é o site oficial · Fotografias do site público da clínica</span>
   </footer>
 
   <script>
@@ -222,15 +260,15 @@
     burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
     links.forEach(l => l.addEventListener("click", () => setMenu(false)));
 
-    // Aparecer ao entrar no ecrã
+    // Revelação ao fazer scroll
     const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.1 });
     document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
-    // Frase de destaque: palavra a palavra
-    const tg = document.getElementById("tagline");
-    tg.innerHTML = tg.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
+    // Tagline palavra a palavra
+    const tagline = document.getElementById("tagline");
+    tagline.innerHTML = tagline.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
     const wio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
-    tg.querySelectorAll(".word").forEach(w => wio.observe(w));
+    tagline.querySelectorAll(".word").forEach(el => wio.observe(el));
   </script>
 </body>
 </html>

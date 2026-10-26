@@ -10,6 +10,7 @@
   <meta property="og:description" content="Três unidades em Lisboa com cuidados veterinários, diagnóstico, especialidades e urgências 24 horas." />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="pt_PT" />
+  <meta property="og:image" content="img/cao.jpg" />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f766e'/%3E%3Ctext x='16' y='22' font-size='18' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='700'%3EA%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,7 +42,6 @@
     .rv.in{opacity:1;transform:none;filter:none}
     .w{opacity:.3;transition:opacity 700ms cubic-bezier(0.32,0.72,0,1)}
     .w.on{opacity:1}
-    .grad{background:linear-gradient(90deg,#000,#666);-webkit-background-clip:text;background-clip:text;color:transparent}
     h1,h2,h3{text-wrap:balance} p,li,summary{text-wrap:pretty}
     @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;filter:none;transition:none}.w{opacity:1}}
   </style>
@@ -54,6 +54,7 @@
       <a href="#main" class="text-lg font-semibold text-brand">Animalgest</a>
       <nav class="hidden gap-6 text-sm text-slate-600 md:flex" aria-label="Principal">
         <a href="#servicos" class="ease-fluid hover:text-slate-900">Serviços</a>
+        <a href="#equipa" class="ease-fluid hover:text-slate-900">Equipa</a>
         <a href="#unidades" class="ease-fluid hover:text-slate-900">Unidades</a>
         <a href="#faq" class="ease-fluid hover:text-slate-900">Perguntas</a>
         <a href="#contacto" class="ease-fluid hover:text-slate-900">Contacto</a>
@@ -63,15 +64,19 @@
   </header>
 
   <main id="main">
-    <section class="bg-teal-50">
-      <div class="mx-auto max-w-6xl px-4 py-24 md:py-32">
-        <p class="rv text-sm font-semibold uppercase tracking-wider text-brand">Lisboa · Praça São João Bosco</p>
-        <h1 class="rv grad mt-3 max-w-[680px] text-4xl font-semibold md:text-6xl">Cuidados veterinários<br />para o seu animal,<br />em três unidades de Lisboa</h1>
-        <p class="rv mt-6 max-w-[680px] text-lg text-slate-700">Vacinação, diagnóstico e especialidades na Clínica Veterinária S. João Bosco e nos consultórios de Santos e do Carmo, com urgências abertas 24 horas.</p>
+    <!-- Hero com foto -->
+    <section class="relative overflow-hidden bg-slate-900">
+      <img src="img/cao.jpg" alt="" width="1600" height="1066" class="absolute inset-0 h-full w-full object-cover opacity-45" loading="eager" />
+      <div aria-hidden="true" class="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/70 to-slate-900/20"></div>
+      <div class="relative mx-auto max-w-6xl px-4 py-28 md:py-40">
+        <p class="rv text-sm font-semibold uppercase tracking-wider text-teal-300">Lisboa · Praça São João Bosco</p>
+        <h1 class="rv mt-3 max-w-[680px] text-4xl font-semibold text-white md:text-6xl">Cuidados veterinários para o seu animal, em três unidades de Lisboa</h1>
+        <p class="rv mt-6 max-w-[680px] text-lg text-slate-200">Vacinação, diagnóstico e especialidades na Clínica Veterinária S. João Bosco e nos consultórios de Santos e do Carmo, com urgências abertas 24 horas.</p>
         <div class="rv mt-8 flex flex-wrap items-center gap-3">
-          <a href="tel:+351213941414" class="ease-fluid rounded-lg bg-brand px-3 py-2 text-base font-semibold text-white hover:bg-brandDark active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Ligar para marcar consulta</a>
+          <a href="tel:+351213941414" class="ease-fluid rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white hover:bg-teal-500 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900">Ligar para marcar consulta</a>
+          <a href="#contacto" class="ease-fluid rounded-lg border border-white/40 px-4 py-2.5 text-base font-semibold text-white hover:bg-white/10 active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Ver contactos</a>
         </div>
-        <p class="rv mt-6 text-sm text-slate-600">Segunda a sexta das 10:00 às 20:00 · Urgências 24 horas: <a class="font-semibold underline" href="tel:+351968774234">968 774 234</a></p>
+        <p class="rv mt-6 text-sm text-slate-300">Segunda a sexta das 10:00 às 20:00 · Urgências 24 horas: <a class="font-semibold underline" href="tel:+351968774234">968 774 234</a></p>
       </div>
     </section>
 
@@ -83,6 +88,23 @@
         <div class="rv ease-fluid rounded-2xl border border-slate-200 p-6 hover:-translate-y-1 hover:border-brand"><h3 class="text-xl font-semibold">Meios complementares de diagnóstico</h3><p class="mt-2 text-slate-600">Exames de apoio para chegar a um diagnóstico com segurança.</p></div>
         <div class="rv ease-fluid rounded-2xl border border-slate-200 p-6 hover:-translate-y-1 hover:border-brand"><h3 class="text-xl font-semibold">Especialidades</h3><p class="mt-2 text-slate-600">Equipa médica com áreas de especialidade para os casos que pedem mais.</p></div>
         <div class="rv ease-fluid rounded-2xl border border-slate-200 p-6 hover:-translate-y-1 hover:border-brand"><h3 class="text-xl font-semibold">Urgências 24 horas</h3><p class="mt-2 text-slate-600">Atendimento a qualquer hora. Ligue para 968 774 234.</p></div>
+      </div>
+    </section>
+
+    <!-- Equipa e espaço -->
+    <section id="equipa" class="bg-teal-50">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <h2 class="rv text-3xl font-semibold">Uma equipa que conhece o seu animal pelo nome</h2>
+        <p class="rv mt-2 max-w-[680px] text-slate-600">Médicos veterinários e espaço próprio na Praça São João Bosco.</p>
+        <div class="mt-10 grid gap-6 sm:grid-cols-3">
+          <img src="img/equipa-1.jpg" alt="Médica veterinária da equipa Animalgest" width="400" height="281" loading="lazy" class="rv h-56 w-full rounded-2xl object-cover object-top shadow-md" />
+          <img src="img/equipa-2.jpg" alt="Médica veterinária da equipa Animalgest" width="400" height="273" loading="lazy" class="rv h-56 w-full rounded-2xl object-cover object-top shadow-md" />
+          <img src="img/equipa-3.jpg" alt="Médica veterinária da equipa Animalgest" width="400" height="266" loading="lazy" class="rv h-56 w-full rounded-2xl object-cover object-top shadow-md" />
+        </div>
+        <div class="mt-6 grid gap-6 md:grid-cols-5">
+          <img src="img/interior-clinica.jpg" alt="Sala de espera da Clínica Veterinária S. João Bosco" width="600" height="360" loading="lazy" class="rv h-64 w-full rounded-2xl object-cover shadow-md md:col-span-3" />
+          <img src="img/gato.jpg" alt="" width="1200" height="800" loading="lazy" class="rv h-64 w-full rounded-2xl object-cover shadow-md md:col-span-2" />
+        </div>
       </div>
     </section>
 
@@ -135,7 +157,7 @@
   </main>
 
   <footer class="py-8 text-center text-sm text-slate-500">
-    © <span id="y"></span> Animalgest · Praça São João Bosco, 17, Lisboa · <span class="text-slate-500">Preview concept: proposta de página, ainda não publicada</span>
+    © <span id="y"></span> Animalgest · Praça São João Bosco, 17, Lisboa · <span class="text-slate-500">Preview concept: proposta de página, ainda não publicada · Fotografias do site público da clínica</span>
   </footer>
   <script>
     document.getElementById("y").textContent = new Date().getFullYear();
