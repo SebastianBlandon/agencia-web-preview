@@ -4,116 +4,253 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Ocean Plumbing LLC — Licensed plumber in Phoenix, AZ</title>
-  <meta name="description" content="Licensed, bonded and insured plumbers in Phoenix, AZ. Repiping, water heaters, drain cleaning, sewer repair and 24/7 plumbing service. Free second opinion on any quote." />
-  <meta property="og:title" content="Ocean Plumbing LLC — Licensed plumber in Phoenix, AZ" />
-  <meta property="og:description" content="Repiping, water heaters, drains, sewer and gas lines. 24/7 plumbing service across the Phoenix area. Free second opinion on any quote." />
+  <title>Ocean Plumbing LLC — Licensed Plumber in Phoenix, AZ · 24/7</title>
+  <meta name="description" content="Licensed, bonded and insured plumber in Phoenix, AZ. 24/7 service, free second opinion on any quote. Repiping, water heaters, drains and sewers. Call (602) 755-3860." />
+  <meta property="og:title" content="Ocean Plumbing LLC — Licensed Plumber in Phoenix, AZ · 24/7" />
+  <meta property="og:description" content="Fully licensed, bonded and insured. 24/7 plumbing service across the Phoenix area." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="img/hero.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e7490'/%3E%3Cpath d='M6 18c3-2 5-2 8 0s5 2 8 0M6 24c3-2 5-2 8 0s5 2 8 0M16 6c2 3 4 5 4 7a4 4 0 1 1-8 0c0-2 2-4 4-7Z' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { brand: "#0e7490", brandDark: "#134e5e" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] } } } };
+    tailwind.config = { theme: { extend: { colors: { brand: "#0e7490", brandDark: "#134e5e", soft: "#ecfeff" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] } } } };
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Plumber",
     "name": "Ocean Plumbing LLC",
-    "telephone": "+1-602-755-3860",
-    "url": "https://oceanplumbingaz.com",
+    "telephone": "+1 602-755-3860",
     "address": { "@type": "PostalAddress", "streetAddress": "2313 W Alice Ave", "addressLocality": "Phoenix", "addressRegion": "AZ", "postalCode": "85021", "addressCountry": "US" },
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
-    ],
-    "areaServed": ["Phoenix","Glendale","Peoria","Surprise","Scottsdale","Tempe","Mesa","Chandler"],
-    "sameAs": ["https://oceanplumbingaz.com","https://www.facebook.com/oceanplumbingaz","https://www.yelp.com/biz/ocean-plumbing-phoenix"]
+    "areaServed": ["Phoenix", "Glendale", "Peoria", "Surprise", "Scottsdale", "Tempe", "Mesa", "Chandler"],
+    "openingHours": "Mo-Su 00:00-24:00"
   }
   </script>
-  <style>html{scroll-behavior:smooth} .reveal{animation:fade .6s ease both} @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    h1, h2, h3, p, li, summary { text-wrap: pretty; }
+    h1, h2 { text-wrap: balance; }
+    .ease-fluid { transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal { opacity: 0; transform: translateY(64px); filter: blur(8px); transition: all 900ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal.in { opacity: 1; transform: none; filter: blur(0); }
+    .word { opacity: 0.3; transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .word.on { opacity: 1; }
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .plus { transform: rotate(45deg); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; filter: none; transition: none; } .word { opacity: 1; } }
+  </style>
 </head>
-<body class="font-sans text-slate-900 antialiased">
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-      <a href="#" class="text-lg font-bold">Ocean Plumbing</a>
-      <nav class="hidden gap-6 text-sm text-slate-600 md:flex">
-        <a href="#services" class="hover:text-slate-900">Services</a>
-        <a href="#reviews" class="hover:text-slate-900">Reviews</a>
-        <a href="#contact" class="hover:text-slate-900">Contact</a>
-      </nav>
-      <a href="tel:+16027553860" class="rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brandDark">Call (602) 755-3860</a>
-    </div>
+<body class="bg-white font-sans text-slate-900 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3">Skip to content</a>
+
+  <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4">
+    <nav class="mt-6 flex w-max items-center gap-6 rounded-full border border-slate-200 bg-white/80 py-2 pl-4 pr-2 backdrop-blur-xl" aria-label="Main">
+      <a href="#inicio" class="flex items-center gap-2"><img src="img/logo.png" alt="Ocean Plumbing" width="797" height="150" class="h-7 w-auto" /></a>
+      <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+        <a href="#services" class="transition-all duration-700 ease-fluid hover:text-slate-900">Services</a>
+        <a href="#reviews" class="transition-all duration-700 ease-fluid hover:text-slate-900">Reviews</a>
+        <a href="#contact" class="transition-all duration-700 ease-fluid hover:text-slate-900">Contact</a>
+      </div>
+      <a href="tel:+16027553860" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Call (602) 755-3860</a>
+      <button id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" class="relative h-10 w-10 rounded-full border border-slate-200 md:hidden">
+        <span class="bar absolute left-2.5 right-2.5 top-4 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+        <span class="bar absolute left-2.5 right-2.5 top-6 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+      </button>
+    </nav>
   </header>
 
-  <section class="relative overflow-hidden bg-gradient-to-br from-brandDark to-slate-900">
-    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1600&q=70" alt="Chrome bathtub faucet and shower hose close up" class="absolute inset-0 h-full w-full object-cover" />
-    <div class="absolute inset-0 bg-slate-900/65"></div>
-    <div class="relative mx-auto max-w-6xl px-4 py-28 text-white md:py-40 reveal">
-      <p class="text-sm font-semibold uppercase tracking-wider text-white/80">Phoenix, AZ · ROC #340664</p>
-      <h1 class="mt-3 max-w-2xl text-4xl font-extrabold leading-tight md:text-6xl">Fair-priced plumbing for Phoenix homes and businesses.</h1>
-      <p class="mt-5 max-w-xl text-lg text-white/90">Fully licensed, bonded and insured. Plumbing service 24/7, and a free second opinion on any quote, no obligation.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="tel:+16027553860" class="rounded-md bg-brand px-6 py-3 font-semibold hover:bg-brandDark">Call now: (602) 755-3860</a>
-        <a href="#contact" class="rounded-md border border-white/60 px-6 py-3 font-semibold hover:bg-white/10">Contact details</a>
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-30 bg-white/95 opacity-0 backdrop-blur-xl transition-opacity duration-500 ease-fluid md:hidden">
+    <div class="flex h-full flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <a href="#services" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Services</a>
+      <a href="#reviews" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Reviews</a>
+      <a href="#contact" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Contact</a>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- Hero with real work photo -->
+    <section id="inicio" class="relative overflow-hidden">
+      <img src="img/hero.jpg" alt="" aria-hidden="true" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-b from-brandDark/80 via-brandDark/60 to-brandDark/85"></div>
+      <div class="relative mx-auto max-w-6xl px-4 pb-24 pt-40 md:pb-32 md:pt-52">
+        <p class="reveal text-sm font-semibold uppercase tracking-wider text-cyan-200">Phoenix, AZ · ROC #340664 · 24/7</p>
+        <h1 class="reveal mt-4 max-w-[760px] text-5xl font-extrabold text-white md:text-6xl">Fair-priced plumbing for Phoenix homes and businesses.</h1>
+        <p class="reveal mt-6 max-w-[560px] text-lg text-cyan-50">Fully licensed, bonded and insured. Plumbing service 24/7, and a free second opinion on any quote, no obligation.</p>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="tel:+16027553860" class="rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-cyan-600 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Call now: (602) 755-3860</a>
+          <a href="https://oceanplumbingaz.com/contact-us/" class="rounded-lg border border-white/50 px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Send a message</a>
+        </div>
+        <p class="reveal mt-6 text-sm text-cyan-100">24/7 plumbing service in Phoenix, Glendale, Peoria, Surprise, Scottsdale, Tempe, Mesa and Chandler</p>
       </div>
-      <p class="mt-6 text-sm text-white/80">24/7 plumbing service in Phoenix</p>
-    </div>
-  </section>
+    </section>
 
-  <section id="services" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="text-3xl font-bold">Our services</h2>
-    <p class="mt-2 max-w-2xl text-slate-600">Residential and commercial plumbing, from a leaky faucet to a whole-home repipe.</p>
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Whole-home repiping</h3><p class="mt-2 text-slate-600">Full repipes for homes, done by licensed plumbers.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Water heaters</h3><p class="mt-2 text-slate-600">Replacement, tankless water heaters, installation and repair.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Drain cleaning and hydro jetting</h3><p class="mt-2 text-slate-600">Drain clearing, camera inspection and hydro jetting.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Sewer line repair and replacement</h3><p class="mt-2 text-slate-600">Sewer line repair and replacement for homes and commercial properties.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Leak detection and gas lines</h3><p class="mt-2 text-slate-600">Leak detection and repair, plus gas line work.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Bathroom plumbing</h3><p class="mt-2 text-slate-600">Toilets, faucets, showers and sinks installed and repaired.</p></div>
-    </div>
-  </section>
+    <!-- Trust strip -->
+    <section class="border-b border-slate-100 bg-soft">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-10 sm:grid-cols-3">
+        <div class="reveal"><p class="text-3xl font-bold text-brand">24/7</p><p class="mt-1 text-slate-600">Plumbing service, day or night, across the Phoenix area.</p></div>
+        <div class="reveal"><p class="text-3xl font-bold text-brand">Free</p><p class="mt-1 text-slate-600">Second opinion on any quote. No obligation.</p></div>
+        <div class="reveal"><p class="text-3xl font-bold text-brand">Licensed</p><p class="mt-1 text-slate-600">Bonded &amp; insured. Arizona ROC #340664.</p></div>
+      </div>
+    </section>
 
-  <section class="bg-slate-50">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-20 md:grid-cols-3">
-      <div><p class="text-3xl font-extrabold text-brand">24/7</p><p class="mt-1 font-semibold">Plumbing service</p><p class="text-slate-600">Call any time for plumbing help in the Phoenix area.</p></div>
-      <div><p class="text-3xl font-extrabold text-brand">Free</p><p class="mt-1 font-semibold">Second opinion</p><p class="text-slate-600">Got a quote elsewhere? Get a second opinion with no obligation.</p></div>
-      <div><p class="text-3xl font-extrabold text-brand">Licensed</p><p class="mt-1 font-semibold">Bonded &amp; insured</p><p class="text-slate-600">Arizona ROC #340664.</p></div>
-    </div>
-  </section>
+    <!-- Services -->
+    <section id="services" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">From a leaky faucet to a whole-home repipe</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Residential and commercial plumbing, handled by licensed plumbers who answer the phone.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M240 120 128 24 16 120h24v96h64v-56h48v56h64v-96Zm-40 80h-32v-56H88v56H56v-91.8l72-62.4 72 62.4Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Whole-home repiping</h3>
+          <p class="mt-2 text-slate-600">Full repipes for homes, done by licensed plumbers.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128 24a104 104 0 1 0 104 104A104 104 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88 88 0 0 1-88 88Zm8-136h-16v40H80v16h40v40h16v-40h40v-16h-40Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Water heaters</h3>
+          <p class="mt-2 text-slate-600">Replacement, tankless water heaters, installation and repair.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128 24a104 104 0 1 0 104 104A104 104 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88 88 0 0 1-88 88Zm-40-104h80v16H88Zm0 40h80v16H88Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Drains &amp; hydro jetting</h3>
+          <p class="mt-2 text-slate-600">Drain clearing, camera inspection and hydro jetting.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16Zm0 160H40V56h176Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Sewer line repair</h3>
+          <p class="mt-2 text-slate-600">Sewer line repair and replacement for homes and commercial properties.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M128 24a104 104 0 1 0 104 104A104 104 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88 88 88 0 0 1-88 88Zm40-104a40 40 0 1 1-80 0 40 40 0 0 1 80 0Zm-40-8a24 24 0 1 0 24 24 24 24 0 0 0-24-24Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Leak detection &amp; gas lines</h3>
+          <p class="mt-2 text-slate-600">Leak detection and repair, plus gas line work.</p>
+        </article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft">
+          <svg class="h-8 w-8 text-brand" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M232 96a8 8 0 0 1-8 8h-16v96a16 16 0 0 1-16 16H64a16 16 0 0 1-16-16v-96H32a8 8 0 0 1 0-16h192a8 8 0 0 1 8 8Z"/></svg>
+          <h3 class="mt-4 text-xl font-semibold">Bathroom plumbing</h3>
+          <p class="mt-2 text-slate-600">Toilets, faucets, showers and sinks installed and repaired.</p>
+        </article>
+      </div>
+    </section>
 
-  <section id="reviews" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="text-3xl font-bold">What customers say</h2>
-    <p class="mt-2 text-sm text-slate-500">Reviews published on their website.</p>
-    <div class="mt-10 grid gap-6 md:grid-cols-3">
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“Jordan &amp; Nina are the best plumbers! Responded call same day repair.”</blockquote><figcaption class="mt-4 text-sm font-semibold">David Lopez · <span class="font-normal text-slate-500">Google review, published on their website</span></figcaption></figure>
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“Jordan knows his business! I appreciate you not charging an arm and a leg”</blockquote><figcaption class="mt-4 text-sm font-semibold">Jake Kelly · <span class="font-normal text-slate-500">Google review, published on their website</span></figcaption></figure>
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“Quick and responsive.”</blockquote><figcaption class="mt-4 text-sm font-semibold">Alvania M. · <span class="font-normal text-slate-500">Thumbtack review, published on their website</span></figcaption></figure>
-    </div>
-  </section>
-
-  <section id="contact" class="bg-slate-900 text-white">
-    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2">
-      <div>
-        <h2 class="text-3xl font-bold">Get in touch</h2>
-        <p class="mt-3 text-slate-300">Serving Phoenix, Glendale, Peoria, Surprise, Scottsdale, Tempe, Mesa, Chandler and surrounding areas.</p>
-        <div class="mt-6 space-y-2 text-slate-200">
-          <p>Phone: <a href="tel:+16027553860" class="underline">(602) 755-3860</a></p>
-          <p>Address: <a href="https://www.google.com/maps/search/?api=1&query=2313+W+Alice+Ave+Phoenix+AZ+85021" class="underline">2313 W Alice Ave, Phoenix, AZ 85021</a></p>
-          <p>Hours: Plumbing service 24/7.</p>
-          <p>License: ROC #340664, fully licensed, bonded and insured.</p>
+    <!-- Work gallery -->
+    <section class="bg-slate-50">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <h2 class="reveal max-w-[680px] text-4xl font-bold">Real work, right here in the Valley</h2>
+        <p class="reveal mt-4 max-w-[680px] text-slate-600">A look at recent jobs from the Ocean Plumbing team.</p>
+        <div class="mt-12 grid gap-6 md:grid-cols-3">
+          <img src="img/services.jpg" alt="Ocean Plumbing service work in Phoenix" width="827" height="544" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+          <img src="img/drains.jpg" alt="Drain and sewer work by Ocean Plumbing" width="750" height="1000" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+          <img src="img/tankless.jpg" alt="Tankless water heater installed by Ocean Plumbing" width="750" height="999" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
         </div>
       </div>
-      <div class="flex flex-col justify-center gap-3">
-        <a href="tel:+16027553860" class="rounded-md bg-brand px-6 py-4 text-center text-lg font-semibold hover:bg-brandDark">Call now: (602) 755-3860</a>
-        <a href="https://www.google.com/maps/search/?api=1&query=2313+W+Alice+Ave+Phoenix+AZ+85021" class="rounded-md border border-slate-600 px-6 py-4 text-center text-lg font-semibold hover:bg-white/10">View on Google Maps</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-    © <span id="y"></span> Ocean Plumbing LLC · 2313 W Alice Ave, Phoenix, AZ 85021 · <span class="text-slate-400">Preview concept — design proposal, not yet live. Not the official website.</span>
-    <p class="mt-2 text-xs text-slate-400">Hero photo: Unsplash (free license).</p>
+    <!-- Tagline -->
+    <section class="bg-slate-900">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[720px] text-4xl font-bold text-white md:text-5xl">Answered the call, fixed it the same day, and didn't charge an arm and a leg.</p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">What customers say</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Reviews published on the company's own website.</p>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"Jordan &amp; Nina are the best plumbers! Responded call same day repair."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">David Lopez · Google review, published on their website</figcaption>
+        </figure>
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"Jordan knows his business! I appreciate you not charging an arm and a leg."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">Jake Kelly · Google review, published on their website</figcaption>
+        </figure>
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"Quick and responsive."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">Alvania M. · Thumbtack review, published on their website</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-slate-50">
+      <div class="mx-auto max-w-3xl px-4 py-24">
+        <h2 class="reveal text-4xl font-bold">Common questions</h2>
+        <div class="mt-12 space-y-3">
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Do you really answer 24/7?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Yes. Ocean Plumbing offers 24/7 plumbing service in Phoenix and the surrounding cities. Call (602) 755-3860 any time.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Already got a quote from another plumber?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Get a free second opinion, no obligation.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Are you licensed?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Yes. Fully licensed, bonded and insured. Arizona ROC #340664.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Which areas do you serve?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Phoenix, Glendale, Peoria, Surprise, Scottsdale, Tempe, Mesa, Chandler and nearby areas.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-900 text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 py-24 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="max-w-[680px] text-4xl font-bold">Plumbing problem? Call any time.</h2>
+          <p class="mt-4 text-slate-300">Based at 2313 W Alice Ave, Phoenix, and serving the whole Valley, for homes and businesses.</p>
+          <ul class="mt-8 space-y-3 text-slate-200">
+            <li>Phone: <a href="tel:+16027553860" class="underline">(602) 755-3860</a></li>
+            <li>2313 W Alice Ave, Phoenix, AZ 85021</li>
+            <li>24/7 plumbing service</li>
+            <li>ROC #340664 · Licensed, bonded &amp; insured</li>
+          </ul>
+        </div>
+        <div class="reveal flex flex-col justify-center gap-3">
+          <a href="tel:+16027553860" class="rounded-lg bg-brand px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-cyan-600 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Call (602) 755-3860</a>
+          <a href="https://oceanplumbingaz.com/contact-us/" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Send a message</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=2313+W+Alice+Ave+Phoenix+AZ+85021" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Get directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="y"></span> Ocean Plumbing LLC · 2313 W Alice Ave, Phoenix, AZ 85021 · <span class="text-slate-500">Preview concept — design proposal, not the official site yet · Logo and photos from the company's public website</span>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    const bars = burger.querySelectorAll(".bar"), links = menu.querySelectorAll(".mlink");
+    function setMenu(open) {
+      burger.setAttribute("aria-expanded", open);
+      menu.setAttribute("aria-hidden", !open);
+      menu.classList.toggle("opacity-0", !open);
+      menu.classList.toggle("pointer-events-none", !open);
+      links.forEach(l => { l.classList.toggle("translate-y-12", !open); l.classList.toggle("opacity-0", !open); });
+      bars[0].classList.toggle("rotate-45", open); bars[0].classList.toggle("top-5", open); bars[0].classList.toggle("top-4", !open);
+      bars[1].classList.toggle("-rotate-45", open); bars[1].classList.toggle("top-5", open); bars[1].classList.toggle("top-6", !open);
+    }
+    burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+    links.forEach(l => l.addEventListener("click", () => setMenu(false)));
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.1 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    const tagline = document.getElementById("tagline");
+    tagline.innerHTML = tagline.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
+    const wio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
+    tagline.querySelectorAll(".word").forEach(el => wio.observe(el));
+  </script>
 </body>
 </html>

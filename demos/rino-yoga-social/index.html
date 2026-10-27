@@ -4,102 +4,204 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>RiNo Yoga Social — shared yoga & wellness space in Denver</title>
-  <meta name="description" content="Denver's shared creative space for yoga, movement and wellness classes in RiNo. Puppy yoga, teacher-run classes and event space rental." />
-  <meta property="og:title" content="RiNo Yoga Social — shared yoga & wellness space in Denver" />
-  <meta property="og:description" content="Denver's shared creative space for yoga, movement and wellness classes in RiNo. Puppy yoga, teacher-run classes and event space rental." />
+  <title>RiNo Yoga Social — Denver's Shared Yoga &amp; Wellness Space</title>
+  <meta name="description" content="Denver's first exclusively shared creative space for yoga, movement and wellness. Teacher-owned classes, monthly Puppy Yoga and a unique rental space in RiNo. (720) 724-8393." />
+  <meta property="og:title" content="RiNo Yoga Social — Denver's Shared Yoga &amp; Wellness Space" />
+  <meta property="og:description" content="Independent teachers, monthly Puppy Yoga and Denver's most unique class &amp; event rental space, in RiNo." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="img/space-1.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c3aed'/%3E%3Ccircle cx='16' cy='11' r='4' fill='white'/%3E%3Cpath d='M8 24c2-5 5-7 8-7s6 2 8 7' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { brand: "#7c3aed", brandDark: "#5b21b6" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"], display: ["Fraunces", "Georgia", "serif"] } } } };
+    tailwind.config = { theme: { extend: { colors: { brand: "#7c3aed", brandDark: "#5b21b6", soft: "#f5f0fe" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"], display: ["Fraunces", "Georgia", "serif"] } } } };
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"HealthClub","name":"RiNo Yoga Social","telephone":"+1 720-724-8393","email":"info@rinoyogasocial.com",
-   "address":{"@type":"PostalAddress","streetAddress":"3101 Walnut Street","addressLocality":"Denver","addressRegion":"CO","postalCode":"80205","addressCountry":"US"},
-   "openingHours":"Mo-Su 08:00-21:00"}
+  {
+    "@context": "https://schema.org",
+    "@type": "ExerciseGym",
+    "name": "RiNo Yoga Social",
+    "telephone": "+1 720-724-8393",
+    "email": "info@rinoyogasocial.com",
+    "address": { "@type": "PostalAddress", "streetAddress": "3101 Walnut Street", "addressLocality": "Denver", "addressRegion": "CO", "postalCode": "80205", "addressCountry": "US" },
+    "openingHours": "Mo-Su 08:00-21:00"
+  }
   </script>
-<style>html{scroll-behavior:smooth} .reveal{animation:fade .6s ease both} @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion:reduce){.reveal{animation:none}}</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    h1, h2, h3, p, li, summary { text-wrap: pretty; }
+    h1, h2 { text-wrap: balance; }
+    .ease-fluid { transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal { opacity: 0; transform: translateY(64px); filter: blur(8px); transition: all 900ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal.in { opacity: 1; transform: none; filter: blur(0); }
+    .hero-title { background: linear-gradient(to right, #2e1065, #7c3aed); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .word { opacity: 0.3; transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .word.on { opacity: 1; }
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .plus { transform: rotate(45deg); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; filter: none; transition: none; } .word { opacity: 1; } }
+  </style>
 </head>
 <body class="bg-white font-sans text-slate-900 antialiased">
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-      <a href="#" class="font-display text-xl font-bold text-brandDark">RiNo Yoga Social</a>
-      <nav class="hidden gap-6 text-sm text-slate-600 md:flex">
-        <a href="#classes" class="hover:text-slate-900">Classes</a>
-        <a href="#puppy" class="hover:text-slate-900">Puppy Yoga</a>
-        <a href="#space" class="hover:text-slate-900">Rent the space</a>
-        <a href="#contact" class="hover:text-slate-900">Contact</a>
-      </nav>
-      <a href="tel:+17207248393" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brandDark">Call (720) 724-8393</a>
-    </div>
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3">Skip to content</a>
+
+  <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4">
+    <nav class="mt-6 flex w-max items-center gap-6 rounded-full border border-slate-200 bg-white/80 py-2 pl-6 pr-2 backdrop-blur-xl" aria-label="Main">
+      <a href="#inicio" class="font-display text-lg font-semibold">RiNo Yoga Social</a>
+      <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+        <a href="#classes" class="transition-all duration-700 ease-fluid hover:text-slate-900">Classes</a>
+        <a href="#puppy" class="transition-all duration-700 ease-fluid hover:text-slate-900">Puppy Yoga</a>
+        <a href="#rent" class="transition-all duration-700 ease-fluid hover:text-slate-900">Rent the space</a>
+        <a href="#contact" class="transition-all duration-700 ease-fluid hover:text-slate-900">Contact</a>
+      </div>
+      <a href="tel:+17207248393" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Call (720) 724-8393</a>
+      <button id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" class="relative h-10 w-10 rounded-full border border-slate-200 md:hidden">
+        <span class="bar absolute left-2.5 right-2.5 top-4 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+        <span class="bar absolute left-2.5 right-2.5 top-6 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+      </button>
+    </nav>
   </header>
 
-  <section class="bg-gradient-to-br from-violet-100 via-white to-orange-100">
-    <div class="mx-auto max-w-6xl px-4 py-24 md:py-32 reveal">
-      <p class="text-sm font-semibold uppercase tracking-wider text-brand">RiNo · Denver · open 8am–9pm daily</p>
-      <h1 class="mt-3 max-w-3xl font-display text-5xl font-bold leading-tight md:text-7xl">Denver’s shared space for yoga, movement &amp; wellness.</h1>
-      <p class="mt-6 max-w-xl text-lg text-slate-600">Independent teachers run their own classes here: power vinyasa, yin, nidra, meditation and more. Free on-site parking.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="#classes" class="rounded-full bg-brand px-6 py-3 font-semibold text-white hover:bg-brandDark">Explore classes</a>
-        <a href="https://bit.ly/49vFRdn" class="rounded-full border border-slate-300 px-6 py-3 font-semibold hover:bg-white">Reserve Puppy Yoga</a>
-      </div>
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-30 bg-white/95 opacity-0 backdrop-blur-xl transition-opacity duration-500 ease-fluid md:hidden">
+    <div class="flex h-full flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <a href="#classes" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Classes</a>
+      <a href="#puppy" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Puppy Yoga</a>
+      <a href="#rent" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Rent the space</a>
+      <a href="#contact" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Contact</a>
     </div>
-  </section>
+  </div>
 
-  <section id="classes" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="font-display text-4xl font-bold">Classes</h2>
-    <p class="mt-2 max-w-2xl text-slate-600">All classes are teacher-owned and operated. See the calendar on the studio site for current times.</p>
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Power Vinyasa</h3><p class="mt-2 text-slate-600">Heart-pumping flow.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Restorative Yin</h3><p class="mt-2 text-slate-600">Slow, supported, deeply calming.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Yoga Nidra &amp; Meditation</h3><p class="mt-2 text-slate-600">Guided rest and stillness.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Slow Flow</h3><p class="mt-2 text-slate-600">Gentle movement at an easy pace.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Women’s Circles</h3><p class="mt-2 text-slate-600">Community gatherings in the studio.</p></div>
-      <div class="rounded-2xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Fitness &amp; workshops</h3><p class="mt-2 text-slate-600">Movement classes and special workshops.</p></div>
-    </div>
-  </section>
-
-  <section id="puppy" class="bg-orange-50">
-    <div class="mx-auto grid max-w-6xl items-center gap-8 px-4 py-20 md:grid-cols-2">
-      <div>
-        <h2 class="font-display text-4xl font-bold">Monthly Puppy Yoga</h2>
-        <p class="mt-3 text-slate-700">Yoga with adoptable puppies at the RiNo location, to help these pups find their forever homes, benefiting local animal rescues.</p>
-      </div>
-      <div class="md:text-right"><a href="https://bit.ly/49vFRdn" class="inline-block rounded-full bg-brand px-8 py-4 text-lg font-semibold text-white hover:bg-brandDark">Reserve your spot</a></div>
-    </div>
-  </section>
-
-  <section id="space" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="font-display text-4xl font-bold">Denver’s most unique class &amp; event rental space</h2>
-    <p class="mt-3 max-w-2xl text-slate-600">Wall-to-wall padded flooring, a UV-activated room stocked with mats, blocks, bolsters, straps, foam rollers and blankets, and free on-site parking. Ideal for meditation, yin, women’s circles and fitness.</p>
-    <a href="mailto:info@rinoyogasocial.com?subject=Space%20rental" class="mt-6 inline-block rounded-full border border-brand px-6 py-3 font-semibold text-brand hover:bg-violet-50">Ask about renting the space</a>
-  </section>
-
-  <section id="contact" class="bg-slate-900 text-white">
-    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2">
-      <div>
-        <h2 class="font-display text-4xl font-bold">Come practice with us</h2>
-        <p class="mt-3 text-slate-300">Questions about classes, events or renting the room? Reach out.</p>
-        <div class="mt-6 space-y-2 text-slate-200">
-          <p>📞 <a href="tel:+17207248393" class="underline">(720) 724-8393</a></p>
-          <p>✉️ <a href="mailto:info@rinoyogasocial.com" class="underline">info@rinoyogasocial.com</a></p>
-          <p>📍 <a href="https://www.google.com/maps/search/?api=1&amp;query=RiNo%20Yoga%20Social%203101%20Walnut%20St%20Denver%20CO%2080205" class="underline">3101 Walnut Street, Denver, CO 80205</a></p>
-          <p>🕒 Monday–Sunday, 8am–9pm</p>
-          <p>📷 <a href="https://www.instagram.com/rinoyogasocial/" class="underline">@rinoyogasocial</a></p>
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden bg-soft">
+      <div aria-hidden="true" class="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-40 md:grid-cols-2 md:pb-28 md:pt-48">
+        <div>
+          <p class="reveal text-sm font-semibold uppercase tracking-wider text-brand">RiNo · Denver · Open 8am–9pm daily</p>
+          <h1 class="reveal hero-title mt-4 font-display text-5xl font-bold md:text-6xl">Denver's shared space for yoga, movement &amp; wellness.</h1>
+          <p class="reveal mt-6 max-w-[560px] text-lg text-slate-700">Independent teachers run their own classes here: power vinyasa, yin, nidra, meditation and more. Free on-site parking.</p>
+          <div class="reveal mt-8 flex flex-wrap gap-3">
+            <a href="#classes" class="rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Explore classes</a>
+            <a href="#puppy" class="rounded-lg border border-brand/40 px-4 py-2.5 text-base font-semibold text-brandDark transition-all duration-700 ease-fluid hover:bg-white active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Reserve Puppy Yoga</a>
+          </div>
+          <p class="reveal mt-6 text-sm text-slate-600">3101 Walnut Street, Denver · @rinoyogasocial</p>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-sm md:max-w-none">
+          <img src="img/space-1.jpg" alt="Inside RiNo Yoga Social's shared studio space" width="1400" height="933" class="w-full rounded-3xl object-cover shadow-2xl ring-1 ring-slate-900/10 md:aspect-[4/5]" loading="eager" />
+          <div class="absolute -left-4 top-6 rounded-2xl bg-white/90 px-4 py-2 text-sm font-semibold text-brandDark shadow-lg backdrop-blur">Teacher-owned classes</div>
+          <div class="absolute -bottom-4 right-6 rounded-2xl bg-brand px-4 py-2 text-sm font-semibold text-white shadow-lg">Free parking on-site</div>
         </div>
       </div>
-      <div class="flex flex-col justify-center gap-3">
-        <a href="tel:+17207248393" class="rounded-full bg-brand px-6 py-4 text-center text-lg font-semibold hover:bg-brandDark">Call the studio</a>
-        <a href="mailto:info@rinoyogasocial.com" class="rounded-full border border-slate-600 px-6 py-4 text-center text-lg font-semibold hover:bg-white/10">Send an email</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-    © <span id="y"></span> RiNo Yoga Social · 3101 Walnut Street, Denver, CO 80205 · <span class="text-slate-400">Preview concept — not the live site</span>
+    <!-- Photo strip -->
+    <section aria-label="The space" class="border-b border-slate-100 bg-white">
+      <div class="mx-auto grid max-w-6xl grid-cols-2 gap-3 px-4 py-10 md:grid-cols-3">
+        <img src="img/space-2.jpg" alt="The studio floor at RiNo Yoga Social" width="1400" height="935" loading="lazy" class="reveal h-48 w-full rounded-2xl object-cover md:h-72" />
+        <img src="img/space-3.jpg" alt="Practice at RiNo Yoga Social" width="864" height="1080" loading="lazy" class="reveal h-48 w-full rounded-2xl object-cover md:h-72" />
+        <img src="img/space-4.jpg" alt="A quiet corner of RiNo Yoga Social" width="743" height="929" loading="lazy" class="reveal col-span-2 h-48 w-full rounded-2xl object-cover md:col-span-1 md:h-72" />
+      </div>
+    </section>
+
+    <!-- Classes -->
+    <section id="classes" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] font-display text-4xl font-bold">Classes run by the teachers themselves</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">All classes are teacher-owned and operated. See the calendar on the studio site for current times.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Power Vinyasa</h3><p class="mt-2 text-slate-600">Heart-pumping flow.</p></article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Restorative Yin</h3><p class="mt-2 text-slate-600">Slow, supported, deeply calming.</p></article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Yoga Nidra &amp; Meditation</h3><p class="mt-2 text-slate-600">Guided rest and stillness.</p></article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Slow Flow</h3><p class="mt-2 text-slate-600">Gentle movement at an easy pace.</p></article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Women's Circles</h3><p class="mt-2 text-slate-600">Community gatherings in the studio.</p></article>
+        <article class="reveal rounded-2xl border border-slate-200 p-6 transition-all duration-700 ease-fluid hover:bg-soft"><h3 class="font-display text-xl font-semibold">Fitness &amp; workshops</h3><p class="mt-2 text-slate-600">Movement classes and special workshops.</p></article>
+      </div>
+      <p class="reveal mt-8"><a href="https://www.rinoyogasocial.com/events-1-1-1" class="text-sm font-semibold text-brand underline underline-offset-4">See this week's calendar on the studio site</a></p>
+    </section>
+
+    <!-- Puppy Yoga -->
+    <section id="puppy" class="bg-brandDark text-white">
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 py-24 md:grid-cols-2">
+        <div class="reveal">
+          <p class="text-sm font-semibold uppercase tracking-wider text-purple-200">Monthly event</p>
+          <h2 class="mt-2 max-w-[680px] font-display text-4xl font-bold">Puppy Yoga</h2>
+          <p class="mt-4 text-purple-100">Yoga with adoptable puppies at the RiNo location, to help these pups find their forever homes, benefiting local animal rescues.</p>
+          <a href="https://bit.ly/49vFRdn" class="mt-8 inline-block rounded-lg bg-white px-4 py-2.5 text-base font-semibold text-brandDark transition-all duration-700 ease-fluid hover:bg-purple-100 active:scale-95">Reserve your spot</a>
+        </div>
+        <img src="img/candlelight.jpg" alt="A candlelight class at RiNo Yoga Social" width="400" height="499" loading="lazy" class="reveal h-64 w-full rounded-3xl object-cover shadow-2xl md:h-80" />
+      </div>
+    </section>
+
+    <!-- Rental -->
+    <section id="rent" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] font-display text-4xl font-bold">Denver's most unique class &amp; event rental space</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Wall-to-wall padded flooring, a UV-activated room stocked with mats, blocks, bolsters, straps, foam rollers and blankets, and free on-site parking. Ideal for meditation, yin, women's circles and fitness.</p>
+      <div class="mt-12 grid gap-6 md:grid-cols-2">
+        <img src="img/space-1.jpg" alt="The rental space at RiNo Yoga Social" width="1400" height="933" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+        <img src="img/space-2.jpg" alt="Another angle of the studio" width="1400" height="935" loading="lazy" class="reveal h-72 w-full rounded-2xl object-cover shadow-md" />
+      </div>
+      <a href="mailto:info@rinoyogasocial.com?subject=Space%20rental" class="reveal mt-8 inline-block rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95">Ask about renting the space</a>
+    </section>
+
+    <!-- Tagline -->
+    <section class="bg-slate-900">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[760px] font-display text-4xl font-bold text-white md:text-5xl">One room, many teachers, and the occasional puppy wandering through downward dog.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-900 text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 border-t border-slate-800 px-4 py-24 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="max-w-[680px] font-display text-4xl font-bold">Come practice with us</h2>
+          <p class="mt-4 text-slate-300">Questions about classes, events or renting the room? Reach out.</p>
+          <ul class="mt-8 space-y-3 text-slate-200">
+            <li>Phone: <a href="tel:+17207248393" class="underline">(720) 724-8393</a></li>
+            <li>Email: <a href="mailto:info@rinoyogasocial.com" class="underline">info@rinoyogasocial.com</a></li>
+            <li>3101 Walnut Street, Denver, CO 80205</li>
+            <li>Monday–Sunday, 8am–9pm</li>
+            <li>Instagram: @rinoyogasocial</li>
+          </ul>
+        </div>
+        <div class="reveal flex flex-col justify-center gap-3">
+          <a href="tel:+17207248393" class="rounded-lg bg-brand px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Call (720) 724-8393</a>
+          <a href="mailto:info@rinoyogasocial.com" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Email the studio</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=RiNo%20Yoga%20Social%203101%20Walnut%20St%20Denver%20CO%2080205" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Get directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="y"></span> RiNo Yoga Social · 3101 Walnut Street, Denver, CO 80205 · <span class="text-slate-500">Preview concept — design proposal, not the official site yet · Photos from the studio's public website</span>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    const bars = burger.querySelectorAll(".bar"), links = menu.querySelectorAll(".mlink");
+    function setMenu(open) {
+      burger.setAttribute("aria-expanded", open);
+      menu.setAttribute("aria-hidden", !open);
+      menu.classList.toggle("opacity-0", !open);
+      menu.classList.toggle("pointer-events-none", !open);
+      links.forEach(l => { l.classList.toggle("translate-y-12", !open); l.classList.toggle("opacity-0", !open); });
+      bars[0].classList.toggle("rotate-45", open); bars[0].classList.toggle("top-5", open); bars[0].classList.toggle("top-4", !open);
+      bars[1].classList.toggle("-rotate-45", open); bars[1].classList.toggle("top-5", open); bars[1].classList.toggle("top-6", !open);
+    }
+    burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+    links.forEach(l => l.addEventListener("click", () => setMenu(false)));
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.1 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    const tagline = document.getElementById("tagline");
+    tagline.innerHTML = tagline.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
+    const wio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
+    tagline.querySelectorAll(".word").forEach(el => wio.observe(el));
+  </script>
 </body>
 </html>

@@ -4,119 +4,246 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Quail Plumbing, Inc — Family-owned plumber in Phoenix, AZ</title>
-  <meta name="description" content="Family-owned Phoenix plumbers since 1991. Repairs, drain cleaning, water heaters and more across the Valley. Free estimates and 24/7 emergency service." />
-  <meta property="og:title" content="Quail Plumbing, Inc — Family-owned plumber in Phoenix, AZ" />
-  <meta property="og:description" content="Family-owned Phoenix plumbers since 1991. Free estimates and 24/7 emergency service across the Valley." />
+  <title>Quail Plumbing, Inc — Family-Owned Plumber in Phoenix, AZ since 1991</title>
+  <meta name="description" content="Family-owned Phoenix plumber since 1991. Licensed, bonded and insured. Free estimates, 24/7 emergencies, same-day service when available. Call (602) 493-9822." />
+  <meta property="og:title" content="Quail Plumbing, Inc — Family-Owned Plumber in Phoenix, AZ since 1991" />
+  <meta property="og:description" content="Honest plumbing for homes and businesses across the Valley since 1991." />
   <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:image" content="img/van.jpg" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d5fa8'/%3E%3Cpath d='M6 18c3-2 5-2 8 0s5 2 8 0M6 24c3-2 5-2 8 0s5 2 8 0M16 6c2 3 4 5 4 7a4 4 0 1 1-8 0c0-2 2-4 4-7Z' stroke='white' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
   <script>
-    tailwind.config = { theme: { extend: { colors: { brand: "#1d5fa8", brandDark: "#133f73" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] } } } };
+    tailwind.config = { theme: { extend: { colors: { brand: "#1d5fa8", brandDark: "#133f73", soft: "#eff6ff" }, fontFamily: { sans: ["Inter", "system-ui", "sans-serif"] } } } };
   </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Plumber",
     "name": "Quail Plumbing, Inc",
-    "telephone": "+1-602-493-9822",
+    "telephone": "+1 602-493-9822",
     "email": "service@quailplumbing.com",
-    "foundingDate": "1991",
     "address": { "@type": "PostalAddress", "streetAddress": "21831 N 16th St", "addressLocality": "Phoenix", "addressRegion": "AZ", "postalCode": "85024", "addressCountry": "US" },
+    "foundingDate": "1991",
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "07:00", "closes": "16:30" }
-    ],
-    "areaServed": ["Phoenix","Scottsdale","Tempe","Mesa","Chandler","Gilbert","Glendale","Avondale","Peoria","Goodyear","Paradise Valley","Fountain Hills","Cave Creek","Anthem"],
-    "sameAs": ["https://www.quailplumbing.com"]
+    ]
   }
   </script>
-  <style>html{scroll-behavior:smooth} .reveal{animation:fade .6s ease both} @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    h1, h2, h3, p, li, summary { text-wrap: pretty; }
+    h1, h2 { text-wrap: balance; }
+    .ease-fluid { transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal { opacity: 0; transform: translateY(64px); filter: blur(8px); transition: all 900ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .reveal.in { opacity: 1; transform: none; filter: blur(0); }
+    .hero-title { background: linear-gradient(to right, #0b2444, #1d5fa8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .word { opacity: 0.3; transition: opacity 700ms cubic-bezier(0.32, 0.72, 0, 1); }
+    .word.on { opacity: 1; }
+    details summary { list-style: none; cursor: pointer; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] .plus { transform: rotate(45deg); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; filter: none; transition: none; } .word { opacity: 1; } }
+  </style>
 </head>
-<body class="font-sans text-slate-900 antialiased">
-  <header class="sticky top-0 z-20 border-b border-slate-200 bg-white/90 backdrop-blur">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-      <a href="#" class="text-lg font-bold">Quail Plumbing</a>
-      <nav class="hidden gap-6 text-sm text-slate-600 md:flex">
-        <a href="#services" class="hover:text-slate-900">Services</a>
-        <a href="#reviews" class="hover:text-slate-900">Reviews</a>
-        <a href="#contact" class="hover:text-slate-900">Contact</a>
-      </nav>
-      <a href="tel:+16024939822" class="rounded-md bg-brand px-4 py-2 text-sm font-semibold text-white hover:bg-brandDark">Call (602) 493-9822</a>
-    </div>
+<body class="bg-white font-sans text-slate-900 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-white focus:p-3">Skip to content</a>
+
+  <header class="fixed inset-x-0 top-0 z-40 flex justify-center px-4">
+    <nav class="mt-6 flex w-max items-center gap-6 rounded-full border border-slate-200 bg-white/80 py-2 pl-6 pr-2 backdrop-blur-xl" aria-label="Main">
+      <a href="#inicio" class="text-sm font-semibold">Quail Plumbing</a>
+      <div class="hidden items-center gap-6 text-sm text-slate-600 md:flex">
+        <a href="#services" class="transition-all duration-700 ease-fluid hover:text-slate-900">Services</a>
+        <a href="#reviews" class="transition-all duration-700 ease-fluid hover:text-slate-900">Reviews</a>
+        <a href="#contact" class="transition-all duration-700 ease-fluid hover:text-slate-900">Contact</a>
+      </div>
+      <a href="tel:+16024939822" class="rounded-full bg-brand px-4 py-2 text-sm font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Call (602) 493-9822</a>
+      <button id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu" class="relative h-10 w-10 rounded-full border border-slate-200 md:hidden">
+        <span class="bar absolute left-2.5 right-2.5 top-4 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+        <span class="bar absolute left-2.5 right-2.5 top-6 h-0.5 bg-slate-900 transition-all duration-500 ease-fluid"></span>
+      </button>
+    </nav>
   </header>
 
-  <section class="relative overflow-hidden bg-gradient-to-br from-brandDark to-slate-900">
-    <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=1600&q=70" alt="Chrome bathtub faucet and shower hose close up" class="absolute inset-0 h-full w-full object-cover" />
-    <div class="absolute inset-0 bg-slate-900/65"></div>
-    <div class="relative mx-auto max-w-6xl px-4 py-28 text-white md:py-40 reveal">
-      <p class="text-sm font-semibold uppercase tracking-wider text-white/80">Phoenix, AZ · Family-owned since 1991</p>
-      <h1 class="mt-3 max-w-2xl text-4xl font-extrabold leading-tight md:text-6xl">Honest plumbing for homes and businesses across the Valley.</h1>
-      <p class="mt-5 max-w-xl text-lg text-white/90">Licensed, bonded and insured. Free estimates, same-day service when available, and emergency help 24/7.</p>
-      <div class="mt-8 flex flex-wrap gap-3">
-        <a href="tel:+16024939822" class="rounded-md bg-brand px-6 py-3 font-semibold hover:bg-brandDark">Call now: (602) 493-9822</a>
-        <a href="mailto:service@quailplumbing.com" class="rounded-md border border-white/60 px-6 py-3 font-semibold hover:bg-white/10">Email us</a>
-      </div>
-      <p class="mt-6 text-sm text-white/80">Emergency plumbing 24 hours a day, 7 days a week</p>
+  <div id="menu" aria-hidden="true" class="pointer-events-none fixed inset-0 z-30 bg-white/95 opacity-0 backdrop-blur-xl transition-opacity duration-500 ease-fluid md:hidden">
+    <div class="flex h-full flex-col items-center justify-center gap-8 text-2xl font-semibold">
+      <a href="#services" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Services</a>
+      <a href="#reviews" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Reviews</a>
+      <a href="#contact" class="mlink translate-y-12 opacity-0 transition-all duration-700 ease-fluid">Contact</a>
     </div>
-  </section>
+  </div>
 
-  <section id="services" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="text-3xl font-bold">Our services</h2>
-    <p class="mt-2 max-w-2xl text-slate-600">Residential and commercial plumbing, from a leaky faucet to new construction and remodels.</p>
-    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Repairs and leak detection</h3><p class="mt-2 text-slate-600">General plumbing repairs and leak detection for homes and commercial properties.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Drain cleaning and hydro jetting</h3><p class="mt-2 text-slate-600">Clogged drains cleared and lines flushed clean with hydro jetting.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Water heaters</h3><p class="mt-2 text-slate-600">Repair and replacement, including tankless water heaters and recirculation pumps.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Water treatment</h3><p class="mt-2 text-slate-600">Water softeners and reverse osmosis systems.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Repiping and gas lines</h3><p class="mt-2 text-slate-600">Whole-home repipes and gas line work done by licensed plumbers.</p></div>
-      <div class="rounded-xl border border-slate-200 p-6"><h3 class="text-lg font-semibold">Sump pumps, backflow and new construction</h3><p class="mt-2 text-slate-600">Sump pumps, backflow, remodels, tenant improvements and new builds.</p></div>
-    </div>
-  </section>
-
-  <section class="bg-slate-50">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-20 md:grid-cols-3">
-      <div><p class="text-3xl font-extrabold text-brand">Since 1991</p><p class="mt-1 font-semibold">Family-owned</p><p class="text-slate-600">Serving Phoenix-area homes and businesses for decades.</p></div>
-      <div><p class="text-3xl font-extrabold text-brand">24/7</p><p class="mt-1 font-semibold">Emergency service</p><p class="text-slate-600">Same-day service with limited standby call spots, at standard rates.</p></div>
-      <div><p class="text-3xl font-extrabold text-brand">Licensed</p><p class="mt-1 font-semibold">Bonded &amp; insured</p><p class="text-slate-600">ROC132227 (commercial) and ROC132226 (residential). BBB and PHCC accredited.</p></div>
-    </div>
-  </section>
-
-  <section id="reviews" class="mx-auto max-w-6xl px-4 py-20">
-    <h2 class="text-3xl font-bold">What customers say</h2>
-    <p class="mt-2 text-sm text-slate-500">Testimonials published on their website.</p>
-    <div class="mt-10 grid gap-6 md:grid-cols-3">
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“Quail Plumbing is legit and don't play games.”</blockquote><figcaption class="mt-4 text-sm font-semibold">Erick B. · <span class="font-normal text-slate-500">Yelp review, published on their website</span></figcaption></figure>
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“That's a quality business.”</blockquote><figcaption class="mt-4 text-sm font-semibold">Eric, Phoenix · <span class="font-normal text-slate-500">published on their website</span></figcaption></figure>
-      <figure class="rounded-xl border border-slate-200 p-6"><blockquote class="text-slate-700">“Quail Plumbing is an Excellent company!”</blockquote><figcaption class="mt-4 text-sm font-semibold">Marie, Gilbert · <span class="font-normal text-slate-500">published on their website</span></figcaption></figure>
-    </div>
-  </section>
-
-  <section id="contact" class="bg-slate-900 text-white">
-    <div class="mx-auto grid max-w-6xl gap-10 px-4 py-20 md:grid-cols-2">
-      <div>
-        <h2 class="text-3xl font-bold">Get in touch</h2>
-        <p class="mt-3 text-slate-300">Free estimates by phone or on site. Serving Phoenix, Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale, Avondale, Peoria, Goodyear, Paradise Valley, Fountain Hills and surrounding areas.</p>
-        <div class="mt-6 space-y-2 text-slate-200">
-          <p>Phoenix: <a href="tel:+16024939822" class="underline">(602) 493-9822</a></p>
-          <p>West Valley: <a href="tel:+16237802233" class="underline">(623) 780-2233</a></p>
-          <p>East Valley / Scottsdale: <a href="tel:+14809456676" class="underline">(480) 945-6676</a></p>
-          <p>Email: <a href="mailto:service@quailplumbing.com" class="underline">service@quailplumbing.com</a></p>
-          <p>Address: <a href="https://www.google.com/maps/search/?api=1&query=21831+N+16th+St+Phoenix+AZ+85024" class="underline">21831 N 16th St, Phoenix, AZ 85024</a></p>
-          <p>Hours: Office Mon-Fri 7:00 AM-4:30 PM. Emergency service 24/7.</p>
+  <main id="main">
+    <!-- Hero -->
+    <section id="inicio" class="relative overflow-hidden bg-soft">
+      <div aria-hidden="true" class="pointer-events-none absolute -left-24 top-24 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-brand/10 blur-3xl"></div>
+      <div class="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-20 pt-40 md:grid-cols-2 md:pb-28 md:pt-48">
+        <div>
+          <p class="reveal text-sm font-semibold uppercase tracking-wider text-brand">Phoenix, AZ · Family-owned since 1991</p>
+          <h1 class="reveal hero-title mt-4 text-5xl font-extrabold md:text-6xl">Honest plumbing for homes and businesses across the Valley.</h1>
+          <p class="reveal mt-6 max-w-[560px] text-lg text-slate-700">Licensed, bonded and insured. Free estimates, same-day service when available, and emergency help 24 hours a day, 7 days a week.</p>
+          <div class="reveal mt-8 flex flex-wrap gap-3">
+            <a href="tel:+16024939822" class="rounded-lg bg-brand px-4 py-2.5 text-base font-semibold text-white transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Call now: (602) 493-9822</a>
+            <a href="mailto:service@quailplumbing.com" class="rounded-lg border border-brand/40 px-4 py-2.5 text-base font-semibold text-brandDark transition-all duration-700 ease-fluid hover:bg-white active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2">Email us</a>
+          </div>
+          <p class="reveal mt-6 text-sm text-slate-600">Emergency plumbing 24 hours a day, 7 days a week</p>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-sm md:max-w-none">
+          <img src="img/van.jpg" alt="Quail Plumbing service van" width="600" height="274" class="w-full rounded-3xl bg-white object-contain p-6 shadow-2xl ring-1 ring-slate-900/10 md:aspect-[4/5]" loading="eager" />
+          <div class="absolute -left-4 top-6 rounded-2xl bg-white/90 px-4 py-2 text-sm font-semibold text-brandDark shadow-lg backdrop-blur">Free estimates</div>
+          <div class="absolute -bottom-4 right-6 rounded-2xl bg-brand px-4 py-2 text-sm font-semibold text-white shadow-lg">Senior discounts</div>
         </div>
       </div>
-      <div class="flex flex-col justify-center gap-3">
-        <a href="tel:+16024939822" class="rounded-md bg-brand px-6 py-4 text-center text-lg font-semibold hover:bg-brandDark">Call now: (602) 493-9822</a>
-        <a href="mailto:service@quailplumbing.com" class="rounded-md border border-slate-600 px-6 py-4 text-center text-lg font-semibold hover:bg-white/10">Email service@quailplumbing.com</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="border-t border-slate-200 py-8 text-center text-sm text-slate-500">
-    © <span id="y"></span> Quail Plumbing, Inc · 21831 N 16th St, Phoenix, AZ 85024 · <span class="text-slate-400">Preview concept — design proposal, not yet live. Not the official website.</span>
-    <p class="mt-2 text-xs text-slate-400">Hero photo: Unsplash (free license).</p>
+    <!-- Trust strip -->
+    <section class="border-b border-slate-100 bg-white">
+      <div class="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 py-10 sm:grid-cols-3">
+        <div class="reveal"><p class="text-3xl font-bold text-brand">Since 1991</p><p class="mt-1 text-slate-600">Family-owned, serving Phoenix-area homes and businesses for decades.</p></div>
+        <div class="reveal"><p class="text-3xl font-bold text-brand">24/7</p><p class="mt-1 text-slate-600">Emergency service, plus same-day standby call spots at standard rates.</p></div>
+        <div class="reveal"><p class="text-3xl font-bold text-brand">Licensed</p><p class="mt-1 text-slate-600">Bonded &amp; insured. ROC132227 (commercial) and ROC132226 (residential). BBB and PHCC accredited.</p></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">From a leaky faucet to new construction</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Residential and commercial plumbing, including remodels and tenant improvements.</p>
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/general.jpg" alt="General plumbing repair" width="300" height="200" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">Repairs &amp; leak detection</h3><p class="mt-2 text-slate-600">General plumbing repairs and leak detection for homes and commercial properties.</p></div>
+        </article>
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/hydro.jpg" alt="Hydro jetting equipment" width="300" height="200" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">Drains &amp; hydro jetting</h3><p class="mt-2 text-slate-600">Clogged drains cleared and lines flushed clean with hydro jetting.</p></div>
+        </article>
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/tankless.jpg" alt="Tankless water heater" width="262" height="201" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">Water heaters</h3><p class="mt-2 text-slate-600">Repair and replacement, including tankless water heaters and recirculation pumps.</p></div>
+        </article>
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/emergency.jpg" alt="Emergency plumbing repair" width="261" height="200" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">Water treatment</h3><p class="mt-2 text-slate-600">Water softeners and reverse osmosis systems for Arizona's hard water.</p></div>
+        </article>
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/commercial.jpg" alt="Commercial plumbing project" width="262" height="175" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">Repiping &amp; gas lines</h3><p class="mt-2 text-slate-600">Whole-home repipes and gas line work done by licensed plumbers.</p></div>
+        </article>
+        <article class="reveal overflow-hidden rounded-2xl border border-slate-200 transition-all duration-700 ease-fluid hover:bg-soft">
+          <img src="img/team.jpg" alt="Quail Plumbing team" width="1074" height="381" loading="lazy" class="h-40 w-full object-cover" />
+          <div class="p-6"><h3 class="text-xl font-semibold">New construction &amp; remodels</h3><p class="mt-2 text-slate-600">Sump pumps, backflow, remodels, tenant improvements and new builds.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="bg-slate-900">
+      <div class="mx-auto max-w-6xl px-4 py-24">
+        <p id="tagline" class="max-w-[720px] text-4xl font-bold text-white md:text-5xl">Legit, no games: the family plumber Phoenix has called since 1991.</p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="mx-auto max-w-6xl px-4 py-24">
+      <h2 class="reveal max-w-[680px] text-4xl font-bold">What customers say</h2>
+      <p class="reveal mt-4 max-w-[680px] text-slate-600">Testimonials published on the company's own website.</p>
+      <div class="mt-12 grid gap-6 md:grid-cols-3">
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"Quail Plumbing is legit and don't play games."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">Erick B. · Yelp, quoted on their website</figcaption>
+        </figure>
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"That's a quality business."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">Eric in Phoenix · testimonial on their website</figcaption>
+        </figure>
+        <figure class="reveal rounded-2xl border border-slate-200 p-6">
+          <div class="text-brand" aria-hidden="true">★★★★★</div>
+          <blockquote class="mt-3 text-slate-700">"Great advice and such fast work."</blockquote>
+          <figcaption class="mt-4 text-sm font-semibold text-slate-500">Tia in Phoenix · customer since 1998, on their website</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="bg-slate-50">
+      <div class="mx-auto max-w-3xl px-4 py-24">
+        <h2 class="reveal text-4xl font-bold">Common questions</h2>
+        <div class="mt-12 space-y-3">
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Do you charge for estimates?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">No. Estimates are free, on site or over the phone. Senior discounts are available too.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Can you come today?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Same-day service runs on a limited number of standby call spots, at standard rates. Emergencies are covered 24/7.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">What are your office hours?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Office: Monday to Friday, 7:00am to 4:30pm. Emergencies: 24 hours a day, 7 days a week.</p>
+          </details>
+          <details class="reveal rounded-2xl border border-slate-200 bg-white p-6">
+            <summary class="flex items-center justify-between gap-4 text-lg font-semibold">Which areas do you serve?<span class="plus text-2xl transition-all duration-700 ease-fluid">+</span></summary>
+            <p class="mt-3 text-slate-600">Phoenix, Scottsdale, Tempe, Mesa, Chandler, Gilbert, Glendale, Avondale, Peoria, Goodyear, Paradise Valley, Fountain Hills and nearby areas; Cave Creek and Anthem via the Scottsdale line.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="bg-slate-900 text-white">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 py-24 md:grid-cols-2">
+        <div class="reveal">
+          <h2 class="max-w-[680px] text-4xl font-bold">Three numbers, one family team</h2>
+          <p class="mt-4 text-slate-300">Call the line closest to you, or email anytime. Free estimates, on site or by phone.</p>
+          <ul class="mt-8 space-y-3 text-slate-200">
+            <li>Phoenix: <a href="tel:+16024939822" class="underline">(602) 493-9822</a></li>
+            <li>West Valley: <a href="tel:+16237802233" class="underline">(623) 780-2233</a></li>
+            <li>East Valley: <a href="tel:+14809456676" class="underline">(480) 945-6676</a></li>
+            <li>Email: <a href="mailto:service@quailplumbing.com" class="underline">service@quailplumbing.com</a></li>
+            <li>21831 N 16th St, Phoenix, AZ 85024</li>
+          </ul>
+        </div>
+        <div class="reveal flex flex-col justify-center gap-3">
+          <a href="tel:+16024939822" class="rounded-lg bg-brand px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-brandDark active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Call (602) 493-9822</a>
+          <a href="mailto:service@quailplumbing.com" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Email us</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=21831+N+16th+St+Phoenix+AZ+85024" class="rounded-lg border border-slate-600 px-3 py-2 text-center text-base font-semibold transition-all duration-700 ease-fluid hover:bg-white/10 active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-white">Get directions</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 text-center text-sm text-slate-500">
+    © <span id="y"></span> Quail Plumbing, Inc · 21831 N 16th St, Phoenix, AZ 85024 · <span class="text-slate-500">Preview concept — design proposal, not the official site yet · Photos from the company's public website</span>
   </footer>
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const burger = document.getElementById("burger"), menu = document.getElementById("menu");
+    const bars = burger.querySelectorAll(".bar"), links = menu.querySelectorAll(".mlink");
+    function setMenu(open) {
+      burger.setAttribute("aria-expanded", open);
+      menu.setAttribute("aria-hidden", !open);
+      menu.classList.toggle("opacity-0", !open);
+      menu.classList.toggle("pointer-events-none", !open);
+      links.forEach(l => { l.classList.toggle("translate-y-12", !open); l.classList.toggle("opacity-0", !open); });
+      bars[0].classList.toggle("rotate-45", open); bars[0].classList.toggle("top-5", open); bars[0].classList.toggle("top-4", !open);
+      bars[1].classList.toggle("-rotate-45", open); bars[1].classList.toggle("top-5", open); bars[1].classList.toggle("top-6", !open);
+    }
+    burger.addEventListener("click", () => setMenu(burger.getAttribute("aria-expanded") !== "true"));
+    links.forEach(l => l.addEventListener("click", () => setMenu(false)));
+    const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: 0.1 });
+    document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+    const tagline = document.getElementById("tagline");
+    tagline.innerHTML = tagline.textContent.trim().split(/\s+/).map(w => '<span class="word">' + w + "</span>").join(" ");
+    const wio = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add("on"); }), { rootMargin: "0px 0px -35% 0px" });
+    tagline.querySelectorAll(".word").forEach(el => wio.observe(el));
+  </script>
 </body>
 </html>
