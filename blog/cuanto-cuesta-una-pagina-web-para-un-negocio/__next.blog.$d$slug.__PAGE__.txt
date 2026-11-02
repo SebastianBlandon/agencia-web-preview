@@ -1,0 +1,56 @@
+1:"$Sreact.fragment"
+4:I[96481,["/agencia-web-preview/_next/static/chunks/0bzty3_2xcfhi.js","/agencia-web-preview/_next/static/chunks/07o5b8zw4axhe.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T1a8e,<p>Si tienes un negocio local y estás pensando en tener página web, la primera pregunta suele ser cuánto cuesta. La respuesta honesta es que depende, pero no tanto como parece. El precio se mueve por unos pocos factores que puedes entender en diez minutos, y con ellos puedes comparar propuestas sin perderte entre tecnicismos.</p>
+<h2>Por qué los precios varían tanto</h2>
+<p>Si pides tres cotizaciones, es normal recibir números muy distintos. Eso pasa porque cada proveedor está vendiendo cosas diferentes con el mismo nombre. Estas son las variables que más pesan:</p>
+<ul>
+<li><strong>Cantidad de páginas.</strong> Una sola página de contacto y servicios (landing page) lleva mucho menos trabajo que un sitio con inicio, servicios, nosotros, galería y contacto.</li>
+<li><strong>Diseño a medida o plantilla.</strong> Una plantilla adaptada es más rápida y económica; un diseño completamente personalizado cuesta más porque requiere más horas.</li>
+<li><strong>Textos e imágenes.</strong> Si el proveedor redacta los textos y trabaja con tus fotos, el precio sube frente a un proyecto donde tú entregas todo listo.</li>
+<li><strong>Funciones extra.</strong> Reservas en línea, tienda, formularios avanzados o integraciones con otros sistemas suman complejidad.</li>
+<li><strong>Quién lo hace.</strong> Un freelance, una agencia pequeña y una agencia grande trabajan con estructuras de costos muy diferentes.</li>
+</ul>
+<h2>Los tres tipos de opciones más comunes</h2>
+<h3>1. Constructores de sitios por suscripción</h3>
+<p>Plataformas donde armas la página tú mismo y pagas una mensualidad. Es la opción de menor costo inicial, pero tu tiempo cuenta, el resultado depende de tu gusto para diseñar y, si dejas de pagar, la página desaparece. Sirve para probar una idea rápido, aunque rara vez para destacar frente a la competencia.</p>
+<h3>2. Freelance o agencia pequeña</h3>
+<p>Es el punto medio para la mayoría de los negocios locales: alguien que diseña, escribe y publica por ti. El costo suele ser un pago único y, si quieres, un plan mensual de mantenimiento. Aquí importa pedir por escrito qué incluye el precio.</p>
+<h3>3. Desarrollo a medida con agencia grande</h3>
+<p>Pensado para empresas con necesidades complejas: sistemas internos, catálogos grandes o integraciones. Para un restaurante, una clínica o una peluquería casi siempre es más de lo que necesitas.</p>
+<h2>Costos que suelen olvidarse</h2>
+<p>Muchas sorpresas vienen de gastos que no estaban en la cotización inicial. Pregunta siempre por:</p>
+<ol>
+<li><strong>Dominio.</strong> El nombre de tu web (por ejemplo, minegocio.com) se paga cada año.</li>
+<li><strong>Hosting.</strong> El lugar donde vive la página; algunas opciones modernas lo incluyen o lo ofrecen gratis para sitios sencillos.</li>
+<li><strong>Mantenimiento.</strong> Actualizar textos, cambiar horarios o arreglar algo roto. Aclara si hay un plan mensual o si cada cambio se cobra aparte.</li>
+<li><strong>Cambios y revisiones.</strong> ¿Cuántas rondas de ajustes incluye el precio?</li>
+<li><strong>Propiedad.</strong> Asegúrate de que el dominio y el contenido queden a tu nombre.</li>
+</ol>
+<h2>Un ejemplo concreto</h2>
+<p>Imagina una peluquería con un solo local. Su objetivo es que quienes buscan "peluquería cerca de mí" encuentren sus servicios, su horario, su ubicación y un botón de WhatsApp para agendar. Para eso no necesita una tienda ni un blog: una landing page bien hecha, con fotos reales del salón, una lista clara de servicios y un mapa, cumple el objetivo.</p>
+<p>Si más adelante quiere mostrar su equipo, una galería amplia y páginas separadas por servicio, puede crecer a un sitio de varias páginas. Empezar pequeño y ampliar cuesta menos que pagar de entrada por páginas que nadie va a leer.</p>
+<h2>Cómo comparar cotizaciones sin equivocarte</h2>
+<p>Antes de decidir, pide a cada proveedor que responda lo mismo:</p>
+<ul>
+<li>¿Cuántas páginas incluye y con qué contenido?</li>
+<li>¿Quién escribe los textos y consigue las imágenes?</li>
+<li>¿Cuánto tarda y cuándo se paga cada parte?</li>
+<li>¿Qué pasa con el dominio, el hosting y los cambios después de publicar?</li>
+<li>¿La página se ve bien en el celular? Hoy la mayoría de las visitas llegan desde ahí.</li>
+</ul>
+<p>Desconfía de las promesas de "primer lugar en Google" garantizado: nadie honesto puede asegurarlo. Lo que sí puede ofrecerte un buen proveedor es una página rápida, clara y bien estructurada, que es la base para que los buscadores la entiendan.</p>
+<h2>Cómo trabajamos nosotros</h2>
+<p>En nuestra agencia manejamos paquetes cerrados: una landing page para empezar y un sitio de cinco páginas para quienes necesitan más, con un plan opcional de mantenimiento mensual. Puedes ver qué incluye cada uno en nuestra <a href="/agencia-web-preview/services/">página de servicios</a>. Si todavía dudas de si tu negocio necesita web, te recomendamos leer primero <a href="/agencia-web-preview/blog/why-your-business-needs-a-website-in-2026/">por qué tu negocio necesita un sitio web en 2026</a>, y si ya estás comparando presupuestos, nuestra guía sobre <a href="/agencia-web-preview/blog/how-much-does-a-small-business-website-cost/">cuánto cuesta un sitio web para una pequeña empresa</a> detalla los factores de precio con más profundidad (está en inglés).</p>
+<h2>Preguntas frecuentes</h2>
+<h3>¿Cuánto cuesta una página web básica para un negocio local?</h3>
+<p>Una página sencilla de una sola sección o pocas páginas es la opción más accesible y suele resolverse con un pago único. El rango real depende del proveedor, del diseño y de si incluye textos, fotos y dominio, así que conviene pedir una cotización por escrito con todo detallado.</p>
+<h3>¿Tengo que pagar algo cada mes?</h3>
+<p>Casi siempre hay costos recurrentes pequeños: el dominio se renueva cada año y el hosting o mantenimiento puede ser mensual. Algunos proveedores los incluyen en un plan; otros los cobran por separado. Pregunta qué pasa si decides no continuar con el plan.</p>
+<h3>¿Es mejor una landing page o un sitio de varias páginas?</h3>
+<p>Si tu objetivo principal es que te llamen, te escriban o reserven, una landing page bien enfocada suele ser suficiente para empezar. Si necesitas explicar muchos servicios, mostrar un portafolio o posicionarte en varias búsquedas, un sitio de varias páginas tiene más sentido.</p>
+<h2>En resumen</h2>
+<p>El precio de una página web depende del alcance, del nivel de personalización y de quién se encarga del contenido. Define primero qué quieres lograr, pide propuestas comparables y verifica qué costos vienen después del lanzamiento. Con eso claro, elegir deja de ser una apuesta y se vuelve una decisión de negocio.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"lang":"es","className":"prose prose-slate mx-auto max-w-3xl px-4 py-16","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"¿Cuánto cuesta una página web para un negocio? Guía de precios y qué incluye\",\"description\":\"Qué factores definen el precio de una página web para un negocio pequeño, qué cobran las opciones más comunes y cómo evitar costos ocultos antes de contratar.\",\"datePublished\":\"2026-11-02\",\"inLanguage\":\"es\",\"mainEntityOfPage\":\"https://sebastianblandon.github.io/agencia-web-preview/blog/cuanto-cuesta-una-pagina-web-para-un-negocio/\",\"author\":{\"@type\":\"Organization\",\"name\":\"Páginas web\"}}"}}],["$","h1",null,{"children":"¿Cuánto cuesta una página web para un negocio? Guía de precios y qué incluye"}],["$","p",null,{"className":"text-sm text-muted","children":"2026-11-02"}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"4UVVd9_VhGZu5iZI2S_Vu"}
+3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
+6:null
