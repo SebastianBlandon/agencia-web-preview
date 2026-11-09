@@ -1,0 +1,56 @@
+1:"$Sreact.fragment"
+4:I[96481,["/agencia-web-preview/_next/static/chunks/0bzty3_2xcfhi.js","/agencia-web-preview/_next/static/chunks/07o5b8zw4axhe.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T164a,<p>Plumbing is one of the most urgent local searches there is. A pipe bursts, a water heater dies, and the homeowner grabs their phone. Looking at plumber website examples is useful, but only if you know which patterns actually earn calls. Below we break down the structure that works, using a composite example of a small plumbing company, and what you can skip.</p>
+<h2>The one job of a plumber's website</h2>
+<p>A plumber's site is not a brochure. It exists to get a phone call or a booking request within seconds of someone landing on it. Everything else (history, team photos, awards) is secondary. If a visitor has to scroll or hunt to find your number, many will simply tap the next result.</p>
+<h2>Pattern 1: a tap-to-call button in the first screen</h2>
+<p>The strongest examples put the phone number in the header and a large "Call now" button on mobile, visible without scrolling. On a phone, that button should dial directly. Pair it with a short line that states the service area, such as "Licensed plumber serving Austin and nearby suburbs."</p>
+<h2>Pattern 2: an honest emergency message</h2>
+<p>Visitors want to know two things: do you handle emergencies, and how fast? Good sites state their real availability. If you offer 24/7 emergency service, say it clearly. If you don't, say your business hours and typical response window instead. Overpromising ("arrive in 15 minutes!") creates bad reviews.</p>
+<h2>Pattern 3: services listed in plain language</h2>
+<p>People search for symptoms, not trade jargon. The best plumbing websites list services the way customers describe them:</p>
+<ul>
+<li>Clogged drains and sewer lines</li>
+<li>Leaks and burst pipes</li>
+<li>Water heater repair and replacement</li>
+<li>Toilet, faucet and fixture installation</li>
+<li>Bathroom and kitchen plumbing for remodels</li>
+</ul>
+<p>Each service can be a short block or its own page. For a small company, one clean page with clear headings is usually enough to start.</p>
+<h2>Pattern 4: trust signals that are real</h2>
+<p>Plumbers work inside people's homes, so trust matters more than design flourishes. Strong examples show:</p>
+<ul>
+<li>License and insurance details (with numbers where your state allows publishing them)</li>
+<li>A few genuine customer reviews, quoted with permission or linked to your Google profile</li>
+<li>Real photos of your own work and van, not generic stock images</li>
+<li>Clear pricing guidance, such as "Service call from $X" only if it is accurate</li>
+</ul>
+<h2>Pattern 5: a simple quote or booking form</h2>
+<p>Not everyone wants to call, especially for non-urgent work like a remodel. A short form asking for name, phone, address area and a description of the problem converts well. Keep it to five fields at most, and confirm by phone or text the same day.</p>
+<h2>A concrete example</h2>
+<p>Imagine "Rivera Plumbing," a two-truck company. Their one-page site opens with a header showing the phone number and "Open today until 6 pm." The hero line reads "Fast, licensed plumbing for homes in Austin," with a Call now button and a Request a quote button. Below come six services in plain words, three reviews, a map of the service area, license details and a five-field form. Total length: about 600 words. It loads quickly on mobile and ranks for local searches mostly because of a well-kept Google Business Profile that links to it.</p>
+<p>Nothing there is exotic. The advantage comes from clarity, speed and honest information.</p>
+<h2>Local search matters as much as design</h2>
+<p>Most plumbing jobs come from people searching near them. Make sure your business name, address area and phone number match exactly on your website and your Google Business Profile, and mention the towns you serve in plain text on the page. Consistency helps search engines connect the two, though no one can guarantee a ranking.</p>
+<h2>What to skip</h2>
+<ul>
+<li>Autoplay videos and heavy sliders that slow the page</li>
+<li>Long "about us" stories before the contact details</li>
+<li>Stock photos of smiling models in uniforms</li>
+<li>Blog posts you never update</li>
+</ul>
+<h2>What does a plumbing website cost?</h2>
+<p>A focused one-page site like the example above is exactly what a <a href="/agencia-web-preview/services/">landing page</a> is designed for, starting at $490. If you also want separate pages for each service and area, a five-page site makes more sense. You can compare the options in our guide on <a href="/agencia-web-preview/blog/how-much-does-a-small-business-website-cost/">how much a small business website costs</a>.</p>
+<h2>Frequently asked questions</h2>
+<h3>How many pages does a plumber's website need?</h3>
+<p>Most small plumbing businesses can start with one well-built page or up to five: home, services, service areas, reviews and contact. Add pages only when you have real content for them.</p>
+<h3>Do I need a website if I already get jobs from referrals and Google reviews?</h3>
+<p>Reviews and referrals bring people to you, but they usually check your website before calling. A simple site confirms you are legitimate and makes it easy to reach you, which helps convert that interest into jobs.</p>
+<h3>Should a plumber's website show prices?</h3>
+<p>Only if you can be accurate. A starting price for a service call or a typical range for common jobs can build trust, but quote exact figures only after understanding the job. Never advertise a price you will not honor.</p>
+<h2>Next step</h2>
+<p>Use these patterns as a checklist for your own site: tap-to-call, honest availability, plain-language services, real trust signals and a short form. If you want help building it, see our <a href="/agencia-web-preview/services/">services</a>.</p>
+0:{"rsc":["$","$1","c",{"children":[["$","main",null,{"lang":"en","className":"prose prose-slate mx-auto max-w-3xl px-4 py-16","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Plumber website examples: what the best ones do right\",\"description\":\"Plumber website examples and the patterns behind them: what to put above the fold, how to handle emergencies, and what a plumbing site should cost.\",\"datePublished\":\"2026-11-09\",\"inLanguage\":\"en\",\"mainEntityOfPage\":\"https://sebastianblandon.github.io/agencia-web-preview/blog/plumber-website-examples/\",\"author\":{\"@type\":\"Organization\",\"name\":\"Páginas web\"}}"}}],["$","h1",null,{"children":"Plumber website examples: what the best ones do right"}],["$","p",null,{"className":"text-sm text-muted","children":"2026-11-09"}],["$","article",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}]]}],null,"$L3"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"rx0zhNQHG0skqs1YmMFwJ"}
+3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
+6:null
