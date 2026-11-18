@@ -7,3 +7,5 @@ trabajo-1: https://static.wixstatic.com/media/270088_13e102c66f104ac99fb0796d44e
 trabajo-2: https://static.wixstatic.com/media/270088_4387727620c54de199b1467725eda9e8.jpg
 trabajo-3: https://static.wixstatic.com/media/270088_5e906a3375324ee2b26305dcab01ca69.jpg
 trabajo-4: https://static.wixstatic.com/media/270088_a9219c3d4d95422987f95fdf01e74728.jpg
+
+Note (2026-11-18): these are hairstyle/style images the business chose to publish on its site. They are NOT presented in the demo as work performed by the salon; no evidence establishes that.
